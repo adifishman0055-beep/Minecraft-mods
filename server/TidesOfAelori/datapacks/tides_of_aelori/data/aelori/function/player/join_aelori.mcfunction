@@ -26,8 +26,8 @@ execute if score #global ae_campaign matches 0 run function aelori:campaign/star
 
 # --- Cinematic intro ---
 title @s times 20 80 20
-title @s title {"text":"Welcome to Aelori","color":"aqua","bold":true}
-title @s subtitle {"text":"Defend the Light","color":"yellow","italic":true}
+title @s title "text":"Welcome to Aelori","color":"aqua","bold":true}
+title @s subtitle "text":"Defend the Light","color":"yellow","italic":true}
 
 playsound minecraft:block.bell.use master @s ~ ~ ~ 1 0.8
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.0

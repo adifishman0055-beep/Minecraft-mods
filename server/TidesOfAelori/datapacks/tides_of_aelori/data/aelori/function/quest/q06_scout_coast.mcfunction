@@ -11,8 +11,8 @@ advancement grant @s only aelori:quest/q06_scout_coast
 
 # --- Dramatic discovery ---
 title @s times 20 80 30
-title @s title {"text":"Korvath...","color":"dark_red","bold":true}
-title @s subtitle {"text":"The rival island looms across the dark waters.","color":"red","italic":true}
+title @s title "text":"Korvath...","color":"dark_red","bold":true}
+title @s subtitle "text":"The rival island looms across the dark waters.","color":"red","italic":true}
 
 playsound minecraft:ambient.nether_wastes.mood master @s ~ ~ ~ 1 0.5
 playsound minecraft:entity.elder_guardian.curse master @s ~ ~ ~ 0.3 0.5

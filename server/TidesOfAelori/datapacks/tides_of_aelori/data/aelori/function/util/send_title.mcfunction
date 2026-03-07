@@ -9,4 +9,4 @@
 
 # Default: clear any existing title, then show blank
 title @s times 10 60 20
-title @s title {"text":""}
+title @s title "text":""}

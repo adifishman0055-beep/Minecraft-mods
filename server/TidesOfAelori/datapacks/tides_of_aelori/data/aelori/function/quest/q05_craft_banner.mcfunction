@@ -11,8 +11,8 @@ advancement grant @s only aelori:quest/q05_craft_banner
 
 # --- Celebration ---
 title @s times 10 70 20
-title @s title {"text":""}
-title @s subtitle {"text":"Quest Complete: Raise the Colors","color":"green"}
+title @s title "text":""}
+title @s subtitle "text":"Quest Complete: Raise the Colors","color":"green"}
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1.5
 

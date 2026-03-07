@@ -8,8 +8,8 @@ scoreboard players set @s ae_quest 4
 advancement grant @s only aelori:quest/q03_light_torches
 
 title @s times 10 60 20
-title @s title {"text":""}
-title @s subtitle {"text":"Mission Complete: Light the Perimeter","color":"red"}
+title @s title "text":""}
+title @s subtitle "text":"Mission Complete: Light the Perimeter","color":"red"}
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
 
 give @s emerald 6

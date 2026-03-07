@@ -14,15 +14,15 @@ advancement grant @s only aelori:quest/q02_deliver_food
 
 # --- Celebration ---
 title @s times 10 60 20
-title @s title {"text":""}
-title @s subtitle {"text":"Quest Complete: Feed the Village","color":"green"}
+title @s title "text":""}
+title @s subtitle "text":"Quest Complete: Feed the Village","color":"green"}
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 playsound minecraft:entity.villager.celebrate master @s ~ ~ ~ 0.7 1
 
 # --- Reward ---
 give @s emerald 12
 give @s golden_apple 2
-give @s iron_sword[custom_name='{"text":"Item","italic":false}']display:{Name:'{"text":"Village Blade","color":"white","italic":false}',Lore:['{"text":"Forged for the defenders of Aelori","color":"gray","italic":true}']}} 1
+give @s iron_sword}} 1
 
 # --- Narrative ---
 tellraw @s ""

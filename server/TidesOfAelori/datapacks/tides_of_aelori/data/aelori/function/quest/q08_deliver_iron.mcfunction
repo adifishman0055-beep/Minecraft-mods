@@ -19,16 +19,16 @@ advancement grant @s only aelori:milestone/chapter_1_complete
 
 # --- Grand celebration ---
 title @s times 30 120 40
-title @s title {"text":"Chapter 1 Complete","color":"gold","bold":true}
-title @s subtitle {"text":"The Shattered Shore","color":"yellow","italic":true}
+title @s title "text":"Chapter 1 Complete","color":"gold","bold":true}
+title @s subtitle "text":"The Shattered Shore","color":"yellow","italic":true}
 
 playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1
 playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 0.3 1.5
 
 # --- Fireworks ---
-execute at @s run summon firework_rocket ~ ~2 ~ {Life:0,LifeTime:20,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",colors:[I;3949738,6719955],fade_colors:[I;8439583],has_trail:1b,has_twinkle:1b}],flight_duration:2b}}}}
-execute at @s run summon firework_rocket ~5 ~2 ~0 {Life:0,LifeTime:25,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",colors:[I;14188339],has_trail:1b}],flight_duration:2b}}}}
-execute at @s run summon firework_rocket ~0 ~2 ~5 {Life:0,LifeTime:30,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",colors:[I;3949738],has_twinkle:1b}],flight_duration:3b}}}}
+execute at @s run summon firework_rocket ~ ~2 ~ Life:0,LifeTime:20,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",colors:[I;3949738,6719955],fade_colors:[I;8439583],has_trail:1b,has_twinkle:1b}],flight_duration:2b}}}}
+execute at @s run summon firework_rocket ~5 ~2 ~0 Life:0,LifeTime:25,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",colors:[I;14188339],has_trail:1b}],flight_duration:2b}}}}
+execute at @s run summon firework_rocket ~0 ~2 ~5 Life:0,LifeTime:30,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"burst",colors:[I;3949738],has_twinkle:1b}],flight_duration:3b}}}}
 
 # --- Settlement upgrade ---
 tellraw @s ""
@@ -39,7 +39,7 @@ tellraw @s ""
 # --- Massive reward ---
 give @s emerald 32
 give @s diamond 4
-give @s iron_sword[custom_name='{"text":"Item","italic":false}']display:{Name:'{"text":"Tide Turner","color":"gold","italic":false}',Lore:['{"text":"The blade that carved Aelori\\'s future","color":"gray","italic":true}','{"text":"Chapter 1 Reward","color":"dark_aqua","italic":true}']},Enchantments:[{id:"sharpness",lvl:3},{id:"unbreaking",lvl:2}]} 1
+give @s iron_sword} 1
 give @s golden_apple 6
 
 # --- Grand narrative ---

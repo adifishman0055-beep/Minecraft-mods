@@ -27,8 +27,8 @@ execute if score #global ae_campaign matches 0 run function aelori:campaign/star
 
 # --- Cinematic intro ---
 title @s times 20 80 20
-title @s title {"text":"Welcome to Korvath","color":"dark_red","bold":true}
-title @s subtitle {"text":"Conquer or Perish","color":"red","italic":true}
+title @s title "text":"Welcome to Korvath","color":"dark_red","bold":true}
+title @s subtitle "text":"Conquer or Perish","color":"red","italic":true}
 
 playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 0.5 0.8
 playsound minecraft:entity.wither.spawn master @s ~ ~ ~ 0.3 1.2

@@ -31,8 +31,8 @@ tellraw @a ""
 
 # --- Title ---
 title @a times 20 60 20
-title @a title {"text":"⚔ RAID ⚔","color":"dark_red","bold":true}
-title @a subtitle {"text":"The Korvathi are coming!","color":"red"}
+title @a title "text":"⚔ RAID ⚔","color":"dark_red","bold":true}
+title @a subtitle "text":"The Korvathi are coming!","color":"red"}
 
 # --- Sounds ---
 playsound minecraft:event.raid.horn master @a ~ ~ ~ 2 0.6

@@ -14,8 +14,8 @@ advancement grant @s only aelori:quest/q04_repair_wall
 
 # --- Celebration ---
 title @s times 10 60 20
-title @s title {"text":""}
-title @s subtitle {"text":"Quest Complete: Mend the Walls","color":"green"}
+title @s title "text":""}
+title @s subtitle "text":"Quest Complete: Mend the Walls","color":"green"}
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 playsound minecraft:block.anvil.use master @s ~ ~ ~ 0.5 0.8
 

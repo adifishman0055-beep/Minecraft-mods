@@ -12,16 +12,16 @@ advancement grant @s only aelori:milestone/first_defense
 
 # --- Celebration ---
 title @s times 20 100 30
-title @s title {"text":"Victory!","color":"gold","bold":true}
-title @s subtitle {"text":"The raiders have been repelled!","color":"green"}
+title @s title "text":"Victory!","color":"gold","bold":true}
+title @s subtitle "text":"The raiders have been repelled!","color":"green"}
 
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 playsound minecraft:entity.firework_rocket.blast master @s ~ ~ ~ 1 1
 playsound minecraft:entity.firework_rocket.twinkle master @s ~ ~ ~ 0.7 1.2
 
 # --- Fireworks celebration ---
-execute at @s run summon firework_rocket ~ ~2 ~ {Life:0,LifeTime:20,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",colors:[I;3949738],fade_colors:[I;8439583],has_trail:1b}],flight_duration:1b}}}}
-execute at @s run summon firework_rocket ~3 ~2 ~3 {Life:0,LifeTime:25,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",colors:[I;6719955],fade_colors:[I;14188339],has_trail:1b}],flight_duration:2b}}}}
+execute at @s run summon firework_rocket ~ ~2 ~ Life:0,LifeTime:20,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",colors:[I;3949738],fade_colors:[I;8439583],has_trail:1b}],flight_duration:1b}}}}
+execute at @s run summon firework_rocket ~3 ~2 ~3 Life:0,LifeTime:25,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",colors:[I;6719955],fade_colors:[I;14188339],has_trail:1b}],flight_duration:2b}}}}
 
 # --- Reward ---
 give @s emerald 25

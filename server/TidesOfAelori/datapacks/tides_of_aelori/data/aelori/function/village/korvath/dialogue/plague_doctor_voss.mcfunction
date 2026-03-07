@@ -21,4 +21,4 @@ execute if score @s ae_quest matches 8 run tellraw @s [{"text":"[Plague Doctor V
 execute if score @s ae_quest matches 9 run tellraw @s [{"text":"[Plague Doctor Voss] ","color":"dark_purple","bold":true},{"text":"You've proven... capable. When the conquest begins, come to me first. I have concoctions that will make the Aelori wish they'd never been born.","color":"gray"}]
 
 playsound minecraft:entity.witch.ambient master @s ~ ~ ~ 0.3 0.8
-particle minecraft:entity_effect{color:[0.5,0.0,0.5]} ~ ~1 ~ 0.3 0.3 0.3 0 5
+particle minecraft:effect ~ ~1 ~ 0.3 0.3 0.3 0 5

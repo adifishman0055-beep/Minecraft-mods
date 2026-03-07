@@ -20,8 +20,8 @@ tellraw @a[scores={ae_faction=2}] [{"text":"  Defend the warcamp! Wave 1 incomin
 tellraw @a[scores={ae_faction=2}] ""
 
 title @a[scores={ae_faction=2}] times 10 40 10
-title @a[scores={ae_faction=2}] title {"text":"UNDER ATTACK!","color":"red","bold":true}
-title @a[scores={ae_faction=2}] subtitle {"text":"Defend the Warcamp!","color":"yellow"}
+title @a[scores={ae_faction=2}] title "text":"UNDER ATTACK!","color":"red","bold":true}
+title @a[scores={ae_faction=2}] subtitle "text":"Defend the Warcamp!","color":"yellow"}
 
 # Give defenders some arrows
 give @a[scores={ae_faction=2}] arrow 64

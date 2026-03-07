@@ -8,8 +8,8 @@ scoreboard players set @s ae_quest 6
 advancement grant @s only aelori:quest/q05_craft_banner
 
 title @s times 10 60 20
-title @s title {"text":""}
-title @s subtitle {"text":"Mission Complete: War Banner","color":"red"}
+title @s title "text":""}
+title @s subtitle "text":"Mission Complete: War Banner","color":"red"}
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
 playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 0.2 1.0
 

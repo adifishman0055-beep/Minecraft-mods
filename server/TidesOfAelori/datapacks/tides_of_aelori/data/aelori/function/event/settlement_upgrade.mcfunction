@@ -40,8 +40,8 @@ execute if score #village ae_settlement matches 2 run setblock 0 71 -10 lantern
 execute if score #village ae_settlement matches 2 run setblock 0 72 0 bell
 
 # Add armor stands as "guards" at the gate
-execute if score #village ae_settlement matches 2 run summon armor_stand -12 70 -20 {CustomName:'{"text":"Aelori Guard","color":"aqua"}',CustomNameVisible:1b,ShowArms:1b,Tags:["aelori.decoration"],ArmorItems:[{id:"iron_boots",count:1},{id:"iron_leggings",count:1},{id:"iron_chestplate",count:1},{id:"iron_helmet",count:1}],HandItems:[{id:"iron_sword",count:1},{id:"shield",count:1}]}
-execute if score #village ae_settlement matches 2 run summon armor_stand -8 70 -20 {CustomName:'{"text":"Aelori Guard","color":"aqua"}',CustomNameVisible:1b,ShowArms:1b,Tags:["aelori.decoration"],ArmorItems:[{id:"iron_boots",count:1},{id:"iron_leggings",count:1},{id:"iron_chestplate",count:1},{id:"iron_helmet",count:1}],HandItems:[{id:"iron_sword",count:1},{id:"shield",count:1}]}
+execute if score #village ae_settlement matches 2 run summon armor_stand -12 70 -20 CustomName:'{"text":"Aelori Guard","color":"aqua"}',CustomNameVisible:1b,ShowArms:1b,Tags:["aelori.decoration"],ArmorItems:[{id:"iron_boots",count:1},{id:"iron_leggings",count:1},{id:"iron_chestplate",count:1},{id:"iron_helmet",count:1}],HandItems:[{id:"iron_sword",count:1},{id:"shield",count:1}]}
+execute if score #village ae_settlement matches 2 run summon armor_stand -8 70 -20 CustomName:'{"text":"Aelori Guard","color":"aqua"}',CustomNameVisible:1b,ShowArms:1b,Tags:["aelori.decoration"],ArmorItems:[{id:"iron_boots",count:1},{id:"iron_leggings",count:1},{id:"iron_chestplate",count:1},{id:"iron_helmet",count:1}],HandItems:[{id:"iron_sword",count:1},{id:"shield",count:1}]}
 
 # Grand celebration particles
 execute if score #village ae_settlement matches 2 positioned 0 72 0 run particle totem_of_undying ~ ~ ~ 5 3 5 0.1 100

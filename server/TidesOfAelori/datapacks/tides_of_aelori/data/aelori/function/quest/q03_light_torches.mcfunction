@@ -11,8 +11,8 @@ advancement grant @s only aelori:quest/q03_light_torches
 
 # --- Celebration ---
 title @s times 10 60 20
-title @s title {"text":""}
-title @s subtitle {"text":"Quest Complete: Light the Perimeter","color":"green"}
+title @s title "text":""}
+title @s subtitle "text":"Quest Complete: Light the Perimeter","color":"green"}
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 
 # --- Reward ---

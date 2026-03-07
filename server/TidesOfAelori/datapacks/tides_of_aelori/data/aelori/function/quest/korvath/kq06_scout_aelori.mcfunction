@@ -8,8 +8,8 @@ scoreboard players set @s ae_quest 7
 advancement grant @s only aelori:quest/q06_scout_coast
 
 title @s times 10 60 20
-title @s title {"text":""}
-title @s subtitle {"text":"Mission Complete: Scout the Enemy","color":"red"}
+title @s title "text":""}
+title @s subtitle "text":"Mission Complete: Scout the Enemy","color":"red"}
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
 
 give @s emerald 12
