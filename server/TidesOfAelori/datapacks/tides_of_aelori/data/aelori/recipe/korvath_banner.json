@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RRR",
+    " S "
+  ],
+  "key": {
+    "R": {"item": "minecraft:red_wool"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "item": "minecraft:red_banner",
+    "count": 1
+  }
+}
