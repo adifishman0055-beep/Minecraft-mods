@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Minecraft world region files (too large for git - back up separately)
+world/TidesOfAelori/region/
+world/TidesOfAelori/DIM1/
+world/TidesOfAelori/DIM-1/
+world/TidesOfAelori/data/
+world/TidesOfAelori/entities/
+world/TidesOfAelori/poi/
+world/TidesOfAelori/playerdata/
+world/TidesOfAelori/stats/
+world/TidesOfAelori/advancements/
+world/TidesOfAelori/level.dat
+world/TidesOfAelori/level.dat_old
+world/TidesOfAelori/session.lock
+world/TidesOfAelori/generated/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Fabric mod build outputs (Phase 3)
+fabric-mod/build/
+fabric-mod/.gradle/
+fabric-mod/run/
+
+# Package outputs
+*.zip
+*.tar.gz
+
+# Backup files
+*.bak
