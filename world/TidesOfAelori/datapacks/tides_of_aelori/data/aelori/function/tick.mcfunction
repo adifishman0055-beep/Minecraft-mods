@@ -1,34 +1,69 @@
 # ============================================================
-# Tides of Aelori — Main Tick Loop
-# Runs every game tick (20x per second)
-# Uses throttled sub-calls to avoid performance issues
+# Tides of Aelori — Main Tick Loop (Multiplayer + Factions)
+# Runs every tick. Handles both Aelori and Korvath players.
 # ============================================================
 
 # --- Increment global tick counter ---
 scoreboard players add #global ae_tick 1
 
-# --- EVERY TICK: First-join check (lightweight) ---
-execute as @a[scores={ae_joined=0}] run function aelori:player/on_first_join
-execute as @a[scores={ae_joined=..0}] unless score @s ae_joined matches 1.. run scoreboard players set @s ae_joined 0
+# ===================== FIRST-JOIN & FACTION =====================
 
-# --- EVERY TICK: Active raid management ---
+# New players (ae_joined == 0) → show faction selection
+execute as @a[scores={ae_joined=0}] run function aelori:player/on_first_join
+
+# Enable trigger for faction selection
+execute as @a[scores={ae_joined=1}] run scoreboard players enable @s ae_select_fac
+
+# Faction selection detection (ae_joined=1 means choosing)
+execute as @a[scores={ae_joined=1,ae_select_fac=1}] run function aelori:player/join_aelori
+execute as @a[scores={ae_joined=1,ae_select_fac=2}] run function aelori:player/join_korvath
+
+# ===================== WEEKLY CAMPAIGN TIMER =====================
+
+# Only tick campaign if active (ae_campaign=1)
+execute if score #global ae_campaign matches 1 run scoreboard players add #global ae_week_timer 1
+
+# Check if week elapsed
+execute if score #global ae_campaign matches 1 run function aelori:campaign/check_week
+
+# ===================== RAID TICKS =====================
+
+# Aelori raid
 execute if score #global ae_raid_active matches 1 run function aelori:event/raid_tick
 
-# --- EVERY 20 TICKS (1 second): Quest progress checks ---
-execute if score #global ae_tick matches 20 run execute as @a[scores={ae_quest=1..8}] run function aelori:player/check_quests
+# Korvath defense raid
+execute if score #global ae_k_raid_active matches 1 run function aelori:event/korvath/raid_tick
 
-# --- EVERY 20 TICKS: HUD / actionbar update ---
-execute if score #global ae_tick matches 20 run execute as @a[scores={ae_joined=1}] run function aelori:player/hud_update
+# ===================== EVERY 20 TICKS (1 second) =====================
 
-# --- EVERY 40 TICKS (2 seconds): Dialogue cooldown decay ---
-execute if score #global ae_tick matches 40 run execute as @a[scores={ae_dialog_cd=1..}] run scoreboard players remove @s ae_dialog_cd 1
+execute unless score #global ae_tick matches 20 run return 0
 
-# --- EVERY 60 TICKS (3 seconds): Villager proximity dialogue ---
-execute if score #global ae_tick matches 60 run execute as @a[scores={ae_joined=1,ae_dialog_cd=0}] at @s run function aelori:village/proximity_dialogue
+# --- Aelori player quest checks ---
+execute as @a[scores={ae_faction=1,ae_quest=1..8}] run function aelori:player/check_quests
 
-# --- EVERY 100 TICKS (5 seconds): Slower periodic checks ---
-# Villager health/existence check
-execute if score #global ae_tick matches 100 run function aelori:village/check_villagers
+# --- Korvath player quest checks ---
+execute as @a[scores={ae_faction=2,ae_quest=1..8}] run function aelori:player/check_quests_korvath
 
-# --- Reset tick counter at 100 ---
-execute if score #global ae_tick matches 100.. run scoreboard players set #global ae_tick 0
+# --- HUD update (faction-aware) ---
+execute as @a[scores={ae_faction=1,ae_quest=1..9}] run function aelori:player/hud_update
+execute as @a[scores={ae_faction=2,ae_quest=1..9}] run function aelori:player/hud_update_korvath
+
+# --- Conquest scoreboard display (every second) ---
+execute as @a[scores={ae_joined=2}] run function aelori:campaign/show_scores
+
+# --- Dialogue cooldowns ---
+execute as @a[scores={ae_dialog_cd=1..}] run scoreboard players remove @s ae_dialog_cd 1
+
+# --- Proximity dialogue for Aelori players near Aelori villagers ---
+execute as @a[scores={ae_faction=1,ae_dialog_cd=0,ae_quest=0..9}] at @s run function aelori:village/proximity_dialogue
+
+# --- Proximity dialogue for Korvath players near Korvath villagers ---
+execute as @a[scores={ae_faction=2,ae_dialog_cd=0,ae_quest=0..9}] at @s run function aelori:village/korvath/proximity_dialogue
+
+# --- Villager checks — both islands ---
+execute store result score #tick_mod ae_tick run scoreboard players get #global ae_tick
+execute if score #global ae_tick matches 20 run function aelori:village/check_villagers
+execute if score #global ae_tick matches 20 run function aelori:village/korvath/check_villagers
+
+# ===================== RESET TICK =====================
+scoreboard players set #global ae_tick 0
