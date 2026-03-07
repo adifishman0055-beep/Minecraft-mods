@@ -11,13 +11,13 @@ advancement grant @s only aelori:quest/q04_repair_wall
 scoreboard players set #korvath_village ae_settlement 1
 function aelori:event/korvath/settlement_upgrade
 
-title @s times 10 60 20
-title @s title "text":""}
-title @s subtitle "text":"Mission Complete: War Walls","color":"red"}
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
+# # title times 10 60 20
+# # title title:""}
+# # title subtitle:"Mission Complete: War Walls","color":"red"}
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
 
-give @s emerald 8
-give @s iron_sword} 1
+# give @s emerald 8
+# give @s iron_sword} 1
 
 scoreboard players add #global ae_korvath_pts 15
 scoreboard players add @s ae_contribution 15

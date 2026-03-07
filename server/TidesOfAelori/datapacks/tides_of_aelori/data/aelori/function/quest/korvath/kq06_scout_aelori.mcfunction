@@ -7,14 +7,14 @@ scoreboard players set @s ae_quest 7
 
 advancement grant @s only aelori:quest/q06_scout_coast
 
-title @s times 10 60 20
-title @s title "text":""}
-title @s subtitle "text":"Mission Complete: Scout the Enemy","color":"red"}
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
+# # title times 10 60 20
+# # title title:""}
+# # title subtitle:"Mission Complete: Scout the Enemy","color":"red"}
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
 
-give @s emerald 12
-give @s golden_apple 4
-give @s ender_pearl 4
+# give @s emerald 12
+# give @s golden_apple 4
+# give @s ender_pearl 4
 
 scoreboard players add #global ae_korvath_pts 20
 scoreboard players add @s ae_contribution 20

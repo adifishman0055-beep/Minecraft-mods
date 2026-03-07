@@ -21,7 +21,7 @@ tellraw @a [{"text":"  ","color":"white"},{"text":"WEEK ","color":"gold","bold":
 tellraw @a [{"text":"══════════════════════════════════════════════","color":"gold"}]
 tellraw @a ""
 
-playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1.0
+# playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 1.0
 
 # --- Weekly bonuses based on week number ---
 # Week 2: Both sides get iron tools
@@ -51,7 +51,7 @@ execute if score #global ae_week matches 9 run tellraw @a [{"text":"  [WARNING] 
 # Week 10: Final week warning
 execute if score #global ae_week matches 10 run tellraw @a [{"text":"  ","color":"red"},{"text":"⚠ THE FINAL WEEK ⚠","color":"red","bold":true}]
 execute if score #global ae_week matches 10 run tellraw @a [{"text":"  The conquest event will trigger when this week ends!","color":"yellow"}]
-execute if score #global ae_week matches 10 run playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 0.5 0.5
+execute if score #global ae_week matches 10 run # playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 0.5 0.5
 
 # --- Show current scores ---
 tellraw @a ""

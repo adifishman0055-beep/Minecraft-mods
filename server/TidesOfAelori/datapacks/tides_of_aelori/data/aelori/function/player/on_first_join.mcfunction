@@ -29,16 +29,16 @@ scoreboard players set @s ae_k_banner 0
 # --- Teleport to neutral lobby ---
 tp @s 0 100 0 0 0
 gamemode adventure @s
-effect give @s minecraft:resistance 9999 255 true
-effect give @s minecraft:saturation 9999 255 true
+effect # give @s minecraft:resistance 9999 255 true
+effect # give @s minecraft:saturation 9999 255 true
 
 # --- Cinematic intro ---
-title @s times 40 100 40
-title @s title "text":"Tides of Aelori","color":"gold","bold":true}
-title @s subtitle "text":"Choose Your Allegiance","color":"yellow","italic":true}
+# # title times 40 100 40
+# # title title:"Tides of Aelori","color":"gold","bold":true}
+# # title subtitle:"Choose Your Allegiance","color":"yellow","italic":true}
 
-playsound minecraft:ambient.cave master @s ~ ~ ~ 1 0.5
-playsound minecraft:block.bell.use master @s ~ ~ ~ 1 0.8
+# playsound minecraft:ambient.cave master @s ~ ~ ~ 1 0.5
+# playsound minecraft:block.bell.use master @s ~ ~ ~ 1 0.8
 
 # --- Faction selection narrative ---
 tellraw @s ""

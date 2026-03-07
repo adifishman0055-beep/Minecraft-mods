@@ -10,15 +10,15 @@ scoreboard players set @s ae_quest 6
 advancement grant @s only aelori:quest/q05_craft_banner
 
 # --- Celebration ---
-title @s times 10 70 20
-title @s title "text":""}
-title @s subtitle "text":"Quest Complete: Raise the Colors","color":"green"}
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
-playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1.5
+# # title times 10 70 20
+# # title title:""}
+# # title subtitle:"Quest Complete: Raise the Colors","color":"green"}
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
+# playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1.5
 
 # --- Reward ---
-give @s emerald 10
-give @s spyglass{display:{Name:'{"text":"Scout\\'s Spyglass","color":"aqua","italic":false}',Lore:['{"text":"See what lies beyond the horizon","color":"gray","italic":true}']}} 1
+# give @s emerald 10
+# give @s spyglass{display:{Name:'{"text":"Scout\\'s Spyglass","color":"aqua","italic":false}',Lore:['{"text":"See what lies beyond the horizon","color":"gray","italic":true}']}} 1
 
 # --- Narrative ---
 tellraw @s ""
@@ -33,8 +33,8 @@ tellraw @s [{"text":"[NEW QUEST] ","color":"green","bold":true},{"text":"Beyond 
 tellraw @s [{"text":"  Travel to the ","color":"gray"},{"text":"eastern coastline","color":"yellow"},{"text":" and investigate the Korvathi signals.","color":"gray"}]
 tellraw @s ""
 
-playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
-particle happy_villager ~ ~1 ~ 1 1 1 0 20
+# playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+# particle happy_villager ~ ~1 ~ 1 1 1 0 20
 
 # --- Conquest points ---
 scoreboard players add #global ae_aelori_pts 15

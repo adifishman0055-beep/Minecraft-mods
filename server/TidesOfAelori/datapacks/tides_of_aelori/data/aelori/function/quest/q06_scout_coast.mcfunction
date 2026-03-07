@@ -10,12 +10,12 @@ scoreboard players set @s ae_quest 7
 advancement grant @s only aelori:quest/q06_scout_coast
 
 # --- Dramatic discovery ---
-title @s times 20 80 30
-title @s title "text":"Korvath...","color":"dark_red","bold":true}
-title @s subtitle "text":"The rival island looms across the dark waters.","color":"red","italic":true}
+# # title times 20 80 30
+# # title title:"Korvath...","color":"dark_red","bold":true}
+# # title subtitle:"The rival island looms across the dark waters.","color":"red","italic":true}
 
-playsound minecraft:ambient.nether_wastes.mood master @s ~ ~ ~ 1 0.5
-playsound minecraft:entity.elder_guardian.curse master @s ~ ~ ~ 0.3 0.5
+# playsound minecraft:ambient.nether_wastes.mood master @s ~ ~ ~ 1 0.5
+# playsound minecraft:entity.elder_guardian.curse master @s ~ ~ ~ 0.3 0.5
 
 # --- Narrative ---
 tellraw @s ""
@@ -37,10 +37,10 @@ tellraw @s ""
 advancement grant @s only aelori:quest/q06_scout_coast
 
 # --- Reward ---
-give @s emerald 10
-give @s iron_ingot 8
-give @s bow{display:{Name:'{"text":"Scout\\'s Longbow","color":"aqua","italic":false}',Lore:['{"text":"Silent and deadly at range","color":"gray","italic":true}']}} 1
-give @s arrow 32
+# give @s emerald 10
+# give @s iron_ingot 8
+# give @s bow{display:{Name:'{"text":"Scout\\'s Longbow","color":"aqua","italic":false}',Lore:['{"text":"Silent and deadly at range","color":"gray","italic":true}']}} 1
+# give @s arrow 32
 
 # --- Quest complete ---
 tellraw @s [{"text":"[QUEST COMPLETE] ","color":"green","bold":true},{"text":"Beyond the Bluffs","color":"white"}]
@@ -55,7 +55,7 @@ tellraw @s [{"text":"  Return to the village and ","color":"gray"},{"text":"surv
 tellraw @s [{"text":"  The raid will begin when night falls...","color":"gray","italic":true}]
 tellraw @s ""
 
-playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+# playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
 
 # --- Conquest points ---
 scoreboard players add #global ae_aelori_pts 20

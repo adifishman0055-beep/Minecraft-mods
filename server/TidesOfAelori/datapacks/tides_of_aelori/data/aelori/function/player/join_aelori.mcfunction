@@ -25,12 +25,12 @@ tellraw @a [{"text":"[Tides] ","color":"gold","bold":true},{"selector":"@s","col
 execute if score #global ae_campaign matches 0 run function aelori:campaign/start
 
 # --- Cinematic intro ---
-title @s times 20 80 20
-title @s title "text":"Welcome to Aelori","color":"aqua","bold":true}
-title @s subtitle "text":"Defend the Light","color":"yellow","italic":true}
+# # title times 20 80 20
+# # title title:"Welcome to Aelori","color":"aqua","bold":true}
+# # title subtitle:"Defend the Light","color":"yellow","italic":true}
 
-playsound minecraft:block.bell.use master @s ~ ~ ~ 1 0.8
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.0
+# playsound minecraft:block.bell.use master @s ~ ~ ~ 1 0.8
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.0
 
 # --- Aelori narrative ---
 tellraw @s ""
@@ -51,15 +51,15 @@ tellraw @s [{"text":"═══════════════════�
 tellraw @s ""
 
 # --- Give starter items ---
-give @s written_book{title:"Elder Miravel's Journal",author:"Elder Miravel",generation:0,pages:['[{"text":"The Journal of Elder Miravel\\n\\n","color":"dark_aqua","bold":true},{"text":"To whoever reads this — our island of Aelori was once a thriving nation. Grand towers rose along our coasts.\\n\\nBut that was before the Korvathi raids.","color":"black","bold":false}]','[{"text":"The Korvathi\\n\\n","color":"dark_red","bold":true},{"text":"They came from the eastern island. At first they traded. Then they demanded. Then they took.\\n\\nWe are few, but we are stubborn.","color":"black","bold":false}]','[{"text":"Your Role\\n\\n","color":"gold","bold":true},{"text":"The village needs:\\n\\n- Timber for repairs\\n- Food for the hungry\\n- Light against the dark\\n- Walls against the raiders\\n\\nSpeak with Elder Miravel.","color":"black","bold":false}]','[{"text":"The Village Council\\n\\n","color":"dark_green","bold":true},{"text":"Smith Dorek — the forge\\nFarmer Hella — the fields\\nScout Tavan — watchtower\\nGuard Brennik — the gate\\n\\nBegin with the forest — wood for the taking.","color":"black","bold":false}]']} 1
+# give @s written_book{title:"Elder Miravel's Journal",author:"Elder Miravel",generation:0,pages:['[{"text":"The Journal of Elder Miravel\\n\\n","color":"dark_aqua","bold":true},{"text":"To whoever reads this — our island of Aelori was once a thriving nation. Grand towers rose along our coasts.\\n\\nBut that was before the Korvathi raids.","color":"black","bold":false}]','[{"text":"The Korvathi\\n\\n","color":"dark_red","bold":true},{"text":"They came from the eastern island. At first they traded. Then they demanded. Then they took.\\n\\nWe are few, but we are stubborn.","color":"black","bold":false}]','[{"text":"Your Role\\n\\n","color":"gold","bold":true},{"text":"The village needs:\\n\\n- Timber for repairs\\n- Food for the hungry\\n- Light against the dark\\n- Walls against the raiders\\n\\nSpeak with Elder Miravel.","color":"black","bold":false}]','[{"text":"The Village Council\\n\\n","color":"dark_green","bold":true},{"text":"Smith Dorek — the forge\\nFarmer Hella — the fields\\nScout Tavan — watchtower\\nGuard Brennik — the gate\\n\\nBegin with the forest — wood for the taking.","color":"black","bold":false}]']} 1
 
-give @s compass{display:{Name:'{"text":"Aelori Compass","color":"aqua","italic":false}',Lore:['{"text":"Points to the heart of Aelori","color":"gray","italic":true}']}} 1
-give @s bread 16
-give @s stone_axe 1
-give @s stone_pickaxe 1
+# give @s compass{display:{Name:'{"text":"Aelori Compass","color":"aqua","italic":false}',Lore:['{"text":"Points to the heart of Aelori","color":"gray","italic":true}']}} 1
+# give @s bread 16
+# give @s stone_axe 1
+# give @s stone_pickaxe 1
 
 # --- Give blue team identifier ---
-give @s leather_chestplate{display:{Name:'{"text":"Aelori Tabard","color":"aqua","italic":false}',color:5592575},Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
+# give @s leather_chestplate{display:{Name:'{"text":"Aelori Tabard","color":"aqua","italic":false}',color:5592575},Enchantments:[{id:"minecraft:binding_curse",lvl:1}]} 1
 
 # --- Grant root advancement & start quest ---
 advancement grant @s only aelori:root
@@ -71,4 +71,4 @@ tellraw @s [{"text":"[QUEST 1] ","color":"green","bold":true},{"text":"Timber Su
 tellraw @s [{"text":"  Gather ","color":"gray"},{"text":"32 Oak Logs","color":"yellow"},{"text":" for the village stockpile.","color":"gray"}]
 tellraw @s ""
 
-playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+# playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2

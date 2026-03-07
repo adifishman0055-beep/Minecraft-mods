@@ -10,15 +10,15 @@ scoreboard players set @s ae_quest 4
 advancement grant @s only aelori:quest/q03_light_torches
 
 # --- Celebration ---
-title @s times 10 60 20
-title @s title "text":""}
-title @s subtitle "text":"Quest Complete: Light the Perimeter","color":"green"}
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
+# # title times 10 60 20
+# # title title:""}
+# # title subtitle:"Quest Complete: Light the Perimeter","color":"green"}
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 
 # --- Reward ---
-give @s emerald 10
-give @s torch 64
-give @s iron_helmet{display:{Name:'{"text":"Aelori Watch Helm","color":"aqua","italic":false}',Lore:['{"text":"Worn by the night watchers","color":"gray","italic":true}']}} 1
+# give @s emerald 10
+# give @s torch 64
+# give @s iron_helmet{display:{Name:'{"text":"Aelori Watch Helm","color":"aqua","italic":false}',Lore:['{"text":"Worn by the night watchers","color":"gray","italic":true}']}} 1
 
 # --- Narrative ---
 tellraw @s ""
@@ -34,8 +34,8 @@ tellraw @s [{"text":"  Repair ","color":"gray"},{"text":"4 wall gaps","color":"y
 tellraw @s [{"text":"  Look for broken sections in the village wall.","color":"gray","italic":true}]
 tellraw @s ""
 
-playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
-particle happy_villager ~ ~1 ~ 1 1 1 0 20
+# playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+# particle happy_villager ~ ~1 ~ 1 1 1 0 20
 
 # --- Conquest points ---
 scoreboard players add #global ae_aelori_pts 15

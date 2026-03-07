@@ -9,16 +9,16 @@ scoreboard players set @s ae_quest 2
 
 advancement grant @s only aelori:quest/q01_gather_wood
 
-title @s times 10 60 20
-title @s title "text":""}
-title @s subtitle "text":"Mission Complete: War Timber","color":"red"}
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
-playsound minecraft:entity.ravager.roar master @s ~ ~ ~ 0.2 1.2
+# # title times 10 60 20
+# # title title:""}
+# # title subtitle:"Mission Complete: War Timber","color":"red"}
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
+# playsound minecraft:entity.ravager.roar master @s ~ ~ ~ 0.2 1.2
 
 # --- Reward ---
-give @s emerald 8
-give @s cooked_beef 16
-give @s iron_ingot 4
+# give @s emerald 8
+# give @s cooked_beef 16
+# give @s iron_ingot 4
 
 # --- Conquest points ---
 scoreboard players add #global ae_korvath_pts 10

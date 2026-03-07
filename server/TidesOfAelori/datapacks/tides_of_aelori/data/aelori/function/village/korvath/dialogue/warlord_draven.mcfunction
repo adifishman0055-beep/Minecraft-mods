@@ -35,5 +35,5 @@ execute if score @s ae_quest matches 8 run tellraw @s [{"text":"[Warlord Draven]
 # Quest 9 — Chapter complete
 execute if score @s ae_quest matches 9 run tellraw @s [{"text":"[Warlord Draven] ","color":"dark_red","bold":true},{"text":"You've earned your place in Korvath, soldier. But the real war has only just begun. The Aelori will fall.","color":"gray"}]
 
-playsound minecraft:entity.ravager.roar master @s ~ ~ ~ 0.2 0.8
-particle minecraft:smoke ~ ~1 ~ 0.3 0.3 0.3 0.01 3
+# playsound minecraft:entity.ravager.roar master @s ~ ~ ~ 0.2 0.8
+# particle minecraft:smoke ~ ~1 ~ 0.3 0.3 0.3 0.01 3

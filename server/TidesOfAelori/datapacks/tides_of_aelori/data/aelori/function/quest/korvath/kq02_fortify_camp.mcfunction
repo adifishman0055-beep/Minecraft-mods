@@ -9,13 +9,13 @@ scoreboard players set @s ae_quest 3
 
 advancement grant @s only aelori:quest/q02_deliver_food
 
-title @s times 10 60 20
-title @s title "text":""}
-title @s subtitle "text":"Mission Complete: Fortify the Camp","color":"red"}
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
+# # title times 10 60 20
+# # title title:""}
+# # title subtitle:"Mission Complete: Fortify the Camp","color":"red"}
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
 
-give @s emerald 10
-give @s iron_ingot 6
+# give @s emerald 10
+# give @s iron_ingot 6
 
 scoreboard players add #global ae_korvath_pts 10
 scoreboard players add @s ae_contribution 10

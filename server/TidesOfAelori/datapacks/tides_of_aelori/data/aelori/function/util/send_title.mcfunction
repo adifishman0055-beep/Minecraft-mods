@@ -1,6 +1,6 @@
 # ============================================================
 # Tides of Aelori — Utility: Send Title
-# Reusable title display
+# Reusable # title display
 # Usage: Called from quest/event functions
 #
 # To customize: This is a template. Override with direct title
@@ -8,5 +8,5 @@
 # ============================================================
 
 # Default: clear any existing title, then show blank
-title @s times 10 60 20
-title @s title "text":""}
+# # title times 10 60 20
+# # title title:""}

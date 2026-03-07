@@ -13,15 +13,15 @@ scoreboard players set @s ae_quest 2
 advancement grant @s only aelori:quest/q01_gather_wood
 
 # --- Celebration ---
-title @s times 10 60 20
-title @s title "text":""}
-title @s subtitle "text":"Quest Complete: Timber Supply","color":"green"}
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
-playsound minecraft:entity.villager.celebrate master @s ~ ~ ~ 0.7 1
+# # title times 10 60 20
+# # title title:""}
+# # title subtitle:"Quest Complete: Timber Supply","color":"green"}
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
+# playsound minecraft:entity.villager.celebrate master @s ~ ~ ~ 0.7 1
 
 # --- Reward ---
-give @s emerald 8
-give @s cooked_beef 16
+# give @s emerald 8
+# give @s cooked_beef 16
 
 # --- Narrative ---
 tellraw @s ""
@@ -36,10 +36,10 @@ tellraw @s [{"text":"[NEW QUEST] ","color":"green","bold":true},{"text":"Feed th
 tellraw @s [{"text":"  Bring ","color":"gray"},{"text":"64 Bread","color":"yellow"},{"text":" to the Village Storehouse.","color":"gray"}]
 tellraw @s ""
 
-playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+# playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
 
 # --- Particle celebration ---
-particle happy_villager ~ ~1 ~ 1 1 1 0 20
+# particle happy_villager ~ ~1 ~ 1 1 1 0 20
 
 # --- Conquest points ---
 scoreboard players add #global ae_aelori_pts 10

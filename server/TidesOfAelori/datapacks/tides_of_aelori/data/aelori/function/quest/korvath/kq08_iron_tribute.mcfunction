@@ -15,11 +15,11 @@ advancement grant @s only aelori:quest/q08_deliver_iron
 advancement grant @s only aelori:milestone/chapter_1_complete
 
 # --- Grand celebration ---
-title @s times 20 100 40
-title @s title "text":"CHAPTER 1 COMPLETE","color":"gold","bold":true}
-title @s subtitle "text":"The Warcamp is Established","color":"red"}
-playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 0.8
-playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 0.3 0.8
+# # title times 20 100 40
+# # title title:"CHAPTER 1 COMPLETE","color":"gold","bold":true}
+# # title subtitle:"The Warcamp is Established","color":"red"}
+# playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 0.8
+# playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 0.3 0.8
 
 # Victory fireworks
 execute at @s run summon firework_rocket ~ ~2 ~ LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Colors:[I;11141120],FadeColors:[I;16776960],Trail:1b,Flicker:1b}]}}}}
@@ -27,9 +27,9 @@ execute at @s run summon firework_rocket ~3 ~2 ~3 LifeTime:25,FireworksItem:{id:
 execute at @s run summon firework_rocket ~-3 ~2 ~-3 LifeTime:30,FireworksItem:{id:"minecraft:firework_rocket",Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:2,Colors:[I;16776960],Flicker:1b}]}}}}
 
 # --- Major rewards ---
-give @s emerald 32
-give @s diamond 8
-give @s iron_chestplate{display:{Name:'{"text":"Korvath War Plate","color":"dark_red","italic":false,"bold":true}',Lore:['{"text":"Earned through blood and iron","color":"red","italic":true}']},Enchantments:[{id:"minecraft:protection",lvl:3},{id:"minecraft:thorns",lvl:1}]} 1
+# give @s emerald 32
+# give @s diamond 8
+# give @s iron_chestplate{display:{Name:'{"text":"Korvath War Plate","color":"dark_red","italic":false,"bold":true}',Lore:['{"text":"Earned through blood and iron","color":"red","italic":true}']},Enchantments:[{id:"minecraft:protection",lvl:3},{id:"minecraft:thorns",lvl:1}]} 1
 
 scoreboard players add #global ae_korvath_pts 50
 scoreboard players add @s ae_contribution 50

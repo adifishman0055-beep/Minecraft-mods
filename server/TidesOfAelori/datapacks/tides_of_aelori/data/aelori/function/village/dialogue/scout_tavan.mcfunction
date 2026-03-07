@@ -18,4 +18,4 @@ execute if score @s ae_quest matches 7 run tellraw @s [{"text":"Scout Tavan: ","
 execute if score @s ae_quest matches 8..9 run tellraw @s [{"text":"Scout Tavan: ","color":"aqua","italic":true},{"text":"You saw Korvath with your own eyes. Dark place. But knowing your enemy is half the battle. We'll be watching.","color":"white"}]
 
 # --- Ambient sound ---
-playsound minecraft:entity.parrot.ambient master @s ~ ~ ~ 0.3 0.8
+# playsound minecraft:entity.parrot.ambient master @s ~ ~ ~ 0.3 0.8

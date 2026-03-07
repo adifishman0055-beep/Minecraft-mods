@@ -22,4 +22,4 @@ execute if score @s ae_quest matches 7 if score #global ae_raid_active matches 1
 execute if score @s ae_quest matches 8..9 run tellraw @s [{"text":"Guard Brennik: ","color":"red","italic":true},{"text":"You fight like a true Aelori. With better iron from Dorek, I can train more guards. We won't be caught off-guard again.","color":"white"}]
 
 # --- Ambient sound ---
-playsound minecraft:item.armor.equip_iron master @s ~ ~ ~ 0.2 0.7
+# playsound minecraft:item.armor.equip_iron master @s ~ ~ ~ 0.2 0.7

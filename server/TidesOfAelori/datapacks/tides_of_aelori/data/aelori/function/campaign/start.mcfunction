@@ -23,4 +23,4 @@ tellraw @a [{"text":"  The faction with the most points at Week 10","color":"whi
 tellraw @a [{"text":"  triggers the ","color":"white"},{"text":"FINAL CONQUEST","color":"red","bold":true},{"text":" event!","color":"white"}]
 tellraw @a ""
 
-playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 0.8
+# playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 1 0.8

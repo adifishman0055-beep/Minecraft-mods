@@ -9,18 +9,18 @@ scoreboard players set @s ae_quest 8
 advancement grant @s only aelori:quest/q07_survive_raid
 advancement grant @s only aelori:milestone/first_defense
 
-title @s times 10 80 20
-title @s title "text":"BATTLE WON","color":"red","bold":true}
-title @s subtitle "text":"The Aelori assault has been crushed!","color":"gold"}
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
-playsound minecraft:entity.wither.death master @s ~ ~ ~ 0.3 0.8
+# # title times 10 80 20
+# # title title:"BATTLE WON","color":"red","bold":true}
+# # title subtitle:"The Aelori assault has been crushed!","color":"gold"}
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
+# playsound minecraft:entity.wither.death master @s ~ ~ ~ 0.3 0.8
 
 # Victory fireworks
 execute at @s run summon firework_rocket ~ ~2 ~ LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:1,Colors:[I;11141120],FadeColors:[I;16776960],Trail:1b,Flicker:1b}]}}}}
 
-give @s emerald 16
-give @s diamond 4
-give @s iron_sword} 1
+# give @s emerald 16
+# give @s diamond 4
+# give @s iron_sword} 1
 
 scoreboard players add #global ae_korvath_pts 30
 scoreboard players add @s ae_contribution 30

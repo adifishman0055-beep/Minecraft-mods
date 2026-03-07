@@ -22,5 +22,5 @@ execute if score @s ae_quest matches 8 run tellraw @s [{"text":"[Forgemaster Kae
 
 execute if score @s ae_quest matches 9 run tellraw @s [{"text":"[Forgemaster Kael] ","color":"gold","bold":true},{"text":"The forge speaks your name now. You've earned the right to commission custom weapons. Come back anytime.","color":"gray"}]
 
-playsound minecraft:block.anvil.use master @s ~ ~ ~ 0.3 1.0
-particle minecraft:flame ~ ~1 ~ 0.2 0.2 0.2 0.01 5
+# playsound minecraft:block.anvil.use master @s ~ ~ ~ 0.3 1.0
+# particle minecraft:flame ~ ~1 ~ 0.2 0.2 0.2 0.01 5

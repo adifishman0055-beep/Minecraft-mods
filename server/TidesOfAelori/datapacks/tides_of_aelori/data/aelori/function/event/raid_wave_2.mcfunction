@@ -8,12 +8,12 @@ scoreboard players set #global ae_raid_wave 2
 
 # --- Announcement ---
 tellraw @a [{"text":"[RAID] ","color":"dark_red","bold":true},{"text":"Wave 2 — Korvathi Archers and Reinforcements!","color":"red"}]
-title @a times 10 40 10
-title @a title "text":""}
-title @a subtitle "text":"Wave 2 — Archers Incoming!","color":"red"}
+# # title times 10 40 10
+# # title title:""}
+# # title subtitle:"Wave 2 — Archers Incoming!","color":"red"}
 
-playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 1 0.7
-playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 0.5 0.8
+# playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 1 0.7
+# playsound minecraft:entity.lightning_bolt.thunder master @a ~ ~ ~ 0.5 0.8
 
 # --- Spawn 6 Korvathi archers (skeletons) ---
 summon skeleton 42 70 10 CustomName:'{"text":"Korvathi Archer","color":"dark_red"}',PersistenceRequired:1b,Tags:["aelori.raider","aelori.raider_w2"],ArmorItems:[{id:"leather_boots",count:1,components:{"minecraft:dyed_color":11141120}},{},{id:"leather_chestplate",count:1,components:{"minecraft:dyed_color":11141120}},{}],HandItems:[{id:"bow",count:1},{}],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.1f,0.0f]}

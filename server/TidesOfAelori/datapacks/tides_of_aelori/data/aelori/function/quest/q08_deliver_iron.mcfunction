@@ -18,12 +18,12 @@ advancement grant @s only aelori:quest/q08_deliver_iron
 advancement grant @s only aelori:milestone/chapter_1_complete
 
 # --- Grand celebration ---
-title @s times 30 120 40
-title @s title "text":"Chapter 1 Complete","color":"gold","bold":true}
-title @s subtitle "text":"The Shattered Shore","color":"yellow","italic":true}
+# # title times 30 120 40
+# # title title:"Chapter 1 Complete","color":"gold","bold":true}
+# # title subtitle:"The Shattered Shore","color":"yellow","italic":true}
 
-playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1
-playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 0.3 1.5
+# playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1
+# playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 0.3 1.5
 
 # --- Fireworks ---
 execute at @s run summon firework_rocket ~ ~2 ~ Life:0,LifeTime:20,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"large_ball",colors:[I;3949738,6719955],fade_colors:[I;8439583],has_trail:1b,has_twinkle:1b}],flight_duration:2b}}}}
@@ -37,10 +37,10 @@ tellraw @s [{"text":"  Aelori Village is now at ","color":"gray"},{"text":"Level
 tellraw @s ""
 
 # --- Massive reward ---
-give @s emerald 32
-give @s diamond 4
-give @s iron_sword} 1
-give @s golden_apple 6
+# give @s emerald 32
+# give @s diamond 4
+# give @s iron_sword} 1
+# give @s golden_apple 6
 
 # --- Grand narrative ---
 tellraw @s ""
@@ -64,8 +64,8 @@ tellraw @s [{"text":"  Thank you for playing Chapter 1!","color":"yellow"}]
 tellraw @s [{"text":"  Chapter 2: Beyond the Horizon — coming soon.","color":"gray","italic":true}]
 tellraw @s ""
 
-playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
-particle totem_of_undying ~ ~1 ~ 2 2 2 0.1 50
+# playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+# particle totem_of_undying ~ ~1 ~ 2 2 2 0.1 50
 
 # --- Trigger settlement visual upgrade ---
 function aelori:event/settlement_upgrade

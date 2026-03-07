@@ -18,4 +18,4 @@ execute if score @s ae_quest matches 8 run tellraw @s [{"text":"Smith Dorek: ","
 execute if score @s ae_quest matches 9 run tellraw @s [{"text":"Smith Dorek: ","color":"gray","italic":true},{"text":"*admiring the Tide Turner* Fine blade, that one. You earned it. Next time the Korvathi come, we'll be ready.","color":"white"}]
 
 # --- Ambient sound ---
-playsound minecraft:block.anvil.use master @s ~ ~ ~ 0.2 0.8
+# playsound minecraft:block.anvil.use master @s ~ ~ ~ 0.2 0.8

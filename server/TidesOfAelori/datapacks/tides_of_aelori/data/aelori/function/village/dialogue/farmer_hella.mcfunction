@@ -18,4 +18,4 @@ execute if score @s ae_quest matches 6..7 run tellraw @s [{"text":"Farmer Hella:
 execute if score @s ae_quest matches 8..9 run tellraw @s [{"text":"Farmer Hella: ","color":"green","italic":true},{"text":"We survived. The harvest is coming in strong. Maybe... maybe things will be alright after all.","color":"white"}]
 
 # --- Ambient particles (farming) ---
-particle composter ~ ~1 ~ 0.5 0.5 0.5 0 3
+# particle composter ~ ~1 ~ 0.5 0.5 0.5 0 3

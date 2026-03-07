@@ -20,5 +20,5 @@ execute if score @s ae_quest matches 8 run tellraw @s [{"text":"[Spy Lyra] ","co
 
 execute if score @s ae_quest matches 9 run tellraw @s [{"text":"[Spy Lyra] ","color":"dark_aqua","bold":true},{"text":"*whispers* Chapter one complete. You'd make a fine spy yourself. When the conquest comes, I'll need operatives behind enemy lines...","color":"gray"}]
 
-playsound minecraft:entity.cat.stray_ambient master @s ~ ~ ~ 0.2 1.5
-particle minecraft:enchant ~ ~1 ~ 0.3 0.3 0.3 0.5 5
+# playsound minecraft:entity.cat.stray_ambient master @s ~ ~ ~ 0.2 1.5
+# particle minecraft:enchant ~ ~1 ~ 0.3 0.3 0.3 0.5 5

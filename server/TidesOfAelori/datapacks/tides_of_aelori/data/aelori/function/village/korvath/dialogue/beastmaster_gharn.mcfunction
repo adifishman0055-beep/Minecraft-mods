@@ -18,5 +18,5 @@ execute if score @s ae_quest matches 7 run tellraw @s [{"text":"[Beastmaster Gha
 
 execute if score @s ae_quest matches 8..9 run tellraw @s [{"text":"[Beastmaster Gharn] ","color":"dark_green","bold":true},{"text":"You fight well, soldier. The pack recognizes you now. They'll follow you into battle.","color":"gray"}]
 
-playsound minecraft:entity.wolf.growl master @s ~ ~ ~ 0.4 0.8
-particle minecraft:poof ~ ~0.5 ~ 0.3 0.1 0.3 0.01 3
+# playsound minecraft:entity.wolf.growl master @s ~ ~ ~ 0.4 0.8
+# particle minecraft:poof ~ ~0.5 ~ 0.3 0.1 0.3 0.01 3

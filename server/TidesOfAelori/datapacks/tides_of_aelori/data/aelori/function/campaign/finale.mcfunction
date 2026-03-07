@@ -6,12 +6,12 @@
 scoreboard players set #global ae_campaign 2
 
 # --- Dramatic announcement ---
-title @a times 40 200 40
-title @a title "text":"THE FINAL CONQUEST","color":"red","bold":true}
-title @a subtitle "text":"The fate of the islands is decided!","color":"gold","italic":true}
+# # title times 40 200 40
+# # title title:"THE FINAL CONQUEST","color":"red","bold":true}
+# # title subtitle:"The fate of the islands is decided!","color":"gold","italic":true}
 
-playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ 1 0.5
-playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 0.5 0.8
+# playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ 1 0.5
+# playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 0.5 0.8
 
 tellraw @a ""
 tellraw @a [{"text":"══════════════════════════════════════════════════","color":"red"}]

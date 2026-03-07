@@ -28,4 +28,4 @@ execute if score @s ae_quest matches 8 run tellraw @s [{"text":"Elder Miravel: "
 execute if score @s ae_quest matches 9 run tellraw @s [{"text":"Elder Miravel: ","color":"gold","italic":true},{"text":"You have saved us. Aelori stands because of you. Rest now... but know that Korvath will not stop. The next chapter of our story is just beginning.","color":"yellow"}]
 
 # --- Ambient sound ---
-playsound minecraft:block.note_block.harp master @s ~ ~ ~ 0.3 1.2
+# playsound minecraft:block.note_block.harp master @s ~ ~ ~ 0.3 1.2

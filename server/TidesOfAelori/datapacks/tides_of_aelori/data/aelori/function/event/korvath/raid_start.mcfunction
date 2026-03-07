@@ -19,11 +19,11 @@ tellraw @a[scores={ae_faction=2}] [{"text":"[BATTLE] ","color":"dark_red","bold"
 tellraw @a[scores={ae_faction=2}] [{"text":"  Defend the warcamp! Wave 1 incoming!","color":"yellow"}]
 tellraw @a[scores={ae_faction=2}] ""
 
-title @a[scores={ae_faction=2}] times 10 40 10
-title @a[scores={ae_faction=2}] title "text":"UNDER ATTACK!","color":"red","bold":true}
-title @a[scores={ae_faction=2}] subtitle "text":"Defend the Warcamp!","color":"yellow"}
+# title @a[scores={ae_faction=2}] times 10 40 10
+# title @a[scores={ae_faction=2}] title:"UNDER ATTACK!","color":"red","bold":true}
+# title @a[scores={ae_faction=2}] subtitle:"Defend the Warcamp!","color":"yellow"}
 
 # Give defenders some arrows
-give @a[scores={ae_faction=2}] arrow 64
+# give @a[scores={ae_faction=2}] arrow 64
 
-playsound minecraft:entity.wither.spawn master @a[scores={ae_faction=2}] ~ ~ ~ 0.5 0.8
+# playsound minecraft:entity.wither.spawn master @a[scores={ae_faction=2}] ~ ~ ~ 0.5 0.8

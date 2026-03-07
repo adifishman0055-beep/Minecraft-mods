@@ -9,11 +9,11 @@ scoreboard players set #global ae_raid_wave 1
 
 # --- Announcement ---
 tellraw @a [{"text":"[RAID] ","color":"dark_red","bold":true},{"text":"Wave 1 — Korvathi Footsoldiers approaching from the east!","color":"red"}]
-title @a times 10 40 10
-title @a title "text":""}
-title @a subtitle "text":"Wave 1 — Footsoldiers!","color":"red"}
+# # title times 10 40 10
+# # title title:""}
+# # title subtitle:"Wave 1 — Footsoldiers!","color":"red"}
 
-playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 1 0.7
+# playsound minecraft:entity.evoker.prepare_summon master @a ~ ~ ~ 1 0.7
 
 # --- Spawn 8 Korvathi footsoldiers on the eastern shore ---
 # Adjust coordinates to your island's eastern beach

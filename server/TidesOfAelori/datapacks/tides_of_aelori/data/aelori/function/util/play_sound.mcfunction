@@ -5,4 +5,4 @@
 # ============================================================
 
 # Quest complete sound
-playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
+# playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
