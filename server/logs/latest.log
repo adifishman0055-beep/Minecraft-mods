@@ -1,8 +1,22 @@
-[00:51:06] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
-[00:51:06] [main/INFO]: Loading 4 mods:
+[00:53:59] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
+[00:53:59] [main/INFO]: Loading 4 mods:
 	- fabricloader 0.16.10
 	   \-- mixinextras 0.4.1
 	- java 21
 	- minecraft 1.21.4
-[00:51:06] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/adifishman/Minecraft-mods/server/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[00:51:12] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[00:53:59] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/adifishman/Minecraft-mods/server/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[00:54:02] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[00:54:03] [main/INFO]: Loaded 1370 recipes
+[00:54:03] [main/INFO]: Loaded 1492 advancements
+[00:54:03] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[00:54:03] [Server thread/INFO]: Loading properties
+[00:54:03] [Server thread/INFO]: Default game type: SURVIVAL
+[00:54:03] [Server thread/INFO]: Generating keypair
+[00:54:03] [Server thread/INFO]: Starting Minecraft server on *:25565
+[00:54:03] [Server thread/INFO]: Using default channel type
+[00:54:03] [Server thread/INFO]: Preparing level "TidesOfAelori"
+[00:54:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[00:54:04] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[00:54:04] [Worker-Main-8/INFO]: Preparing spawn area: 0%
+[00:54:04] [Server thread/INFO]: Time elapsed: 945 ms
+[00:54:04] [Server thread/INFO]: Done (1.071s)! For help, type "help"

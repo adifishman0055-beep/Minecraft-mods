@@ -1,24 +1,24 @@
-# ============================================================
-# Korvath Villagers — Spawn 5 War Council NPCs
-# Located on Korvath Island (centered at 1000, 70, 0)
-# ============================================================
-
-# --- Kill existing Korvath NPCs (for respawn/reload) ---
-kill @e[tag=korvath.npc]
-
-# === WARLORD DRAVEN — Leader (at warcamp center) ===
-summon minecraft:villager 1000 70 5 VillagerData:{profession:"weaponsmith",level:5,type:"desert"},CustomName:'{"text":"Warlord Draven","color":"dark_red","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.draven"],Offers:{Recipes:[{buy:{id:"minecraft:iron_ingot",Count:4},sell:{id:"minecraft:diamond_sword",Count:1,tag:{display:{Name:'{"text":"Korvath Warblade","color":"dark_red","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3}]}},maxUses:99},{buy:{id:"minecraft:emerald",Count:8},sell:{id:"minecraft:diamond_chestplate",Count:1,tag:{display:{Name:'{"text":"Warlord\\'s Plate","color":"dark_red","italic":false}'}}},maxUses:99},{buy:{id:"minecraft:emerald",Count:1},sell:{id:"minecraft:cooked_beef",Count:16},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:2490368}}},{id:"minecraft:iron_helmet",Count:1b}],HandItems:[{id:"minecraft:netherite_sword",Count:1b},{}]}
-
-# === FORGEMASTER KAEL — Smith/Weapons (at the forge) ===
-summon minecraft:villager 1015 70 -10 VillagerData:{profession:"toolsmith",level:5,type:"desert"},CustomName:'{"text":"Forgemaster Kael","color":"gold","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.kael"],Offers:{Recipes:[{buy:{id:"minecraft:iron_ingot",Count:2},sell:{id:"minecraft:iron_sword",Count:1,tag:{display:{Name:'{"text":"War Iron","color":"gray","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:2}]}},maxUses:99},{buy:{id:"minecraft:iron_ingot",Count:3},sell:{id:"minecraft:iron_pickaxe",Count:1,tag:{Enchantments:[{id:"minecraft:efficiency",lvl:3}]}},maxUses:99},{buy:{id:"minecraft:coal",Count:16},sell:{id:"minecraft:iron_ingot",Count:4},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:6697728}}},{}],HandItems:[{id:"minecraft:iron_axe",Count:1b},{}]}
-
-# === PLAGUE DOCTOR VOSS — Potions/Dark Magic ===
-summon minecraft:villager 985 70 10 VillagerData:{profession:"cleric",level:5,type:"swamp"},CustomName:'{"text":"Plague Doctor Voss","color":"dark_purple","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.voss"],Offers:{Recipes:[{buy:{id:"minecraft:emerald",Count:3},sell:{id:"minecraft:splash_potion",Count:1,tag:{Potion:"minecraft:strong_harming"}},maxUses:99},{buy:{id:"minecraft:emerald",Count:2},sell:{id:"minecraft:potion",Count:1,tag:{Potion:"minecraft:strong_healing"}},maxUses:99},{buy:{id:"minecraft:spider_eye",Count:8},sell:{id:"minecraft:emerald",Count:1},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:4915330}}},{}],HandItems:[{id:"minecraft:brewing_stand",Count:1b},{}]}
-
-# === BEASTMASTER GHARN — Animal Tamer/Scouts ===
-summon minecraft:villager 1025 75 0 VillagerData:{profession:"butcher",level:5,type:"taiga"},CustomName:'{"text":"Beastmaster Gharn","color":"dark_green","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.gharn"],Offers:{Recipes:[{buy:{id:"minecraft:bone",Count:8},sell:{id:"minecraft:wolf_spawn_egg",Count:1},maxUses:99},{buy:{id:"minecraft:raw_beef",Count:16},sell:{id:"minecraft:emerald",Count:2},maxUses:99},{buy:{id:"minecraft:emerald",Count:5},sell:{id:"minecraft:saddle",Count:1},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:5635072}}},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}]}
-
-# === SPY LYRA — Intelligence/Scouting ===
-summon minecraft:villager 990 70 -20 VillagerData:{profession:"cartographer",level:5,type:"plains"},CustomName:'{"text":"Spy Lyra","color":"dark_aqua","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.lyra"],Offers:{Recipes:[{buy:{id:"minecraft:emerald",Count:3},sell:{id:"minecraft:spyglass",Count:1,tag:{display:{Name:'{"text":"Scout\\'s Lens","color":"dark_aqua","italic":false}'}}},maxUses:99},{buy:{id:"minecraft:emerald",Count:5},sell:{id:"minecraft:ender_pearl",Count:4},maxUses:99},{buy:{id:"minecraft:paper",Count:24},sell:{id:"minecraft:emerald",Count:1},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:2263842}}},{}],HandItems:[{id:"minecraft:spyglass",Count:1b},{}]}
-
-tellraw @a[scores={ae_faction=2}] [{"text":"[Korvath] ","color":"dark_red","bold":true},{"text":"War Council assembled.","color":"gray"}]
+# # ============================================================
+# # Korvath Villagers — Spawn 5 War Council NPCs
+# # Located on Korvath Island (centered at 1000, 70, 0)
+# # ============================================================
+# 
+# # --- Kill existing Korvath NPCs (for respawn/reload) ---
+# kill @e[tag=korvath.npc]
+# 
+# # === WARLORD DRAVEN — Leader (at warcamp center) ===
+# # summon minecraft:villager 1000 70 5 VillagerData:{profession:"weaponsmith",level:5,type:"desert"},CustomName:'{"text":"Warlord Draven","color":"dark_red","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.draven"],Offers:{Recipes:[{buy:{id:"minecraft:iron_ingot",Count:4},sell:{id:"minecraft:diamond_sword",Count:1,tag:{display:{Name:'{"text":"Korvath Warblade","color":"dark_red","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3}]}},maxUses:99},{buy:{id:"minecraft:emerald",Count:8},sell:{id:"minecraft:diamond_chestplate",Count:1,tag:{display:{Name:'{"text":"Warlord\\'s Plate","color":"dark_red","italic":false}'}}},maxUses:99},{buy:{id:"minecraft:emerald",Count:1},sell:{id:"minecraft:cooked_beef",Count:16},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:2490368}}},{id:"minecraft:iron_helmet",Count:1b}],HandItems:[{id:"minecraft:netherite_sword",Count:1b},{}]}
+# 
+# # === FORGEMASTER KAEL — Smith/Weapons (at the forge) ===
+# # summon minecraft:villager 1015 70 -10 VillagerData:{profession:"toolsmith",level:5,type:"desert"},CustomName:'{"text":"Forgemaster Kael","color":"gold","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.kael"],Offers:{Recipes:[{buy:{id:"minecraft:iron_ingot",Count:2},sell:{id:"minecraft:iron_sword",Count:1,tag:{display:{Name:'{"text":"War Iron","color":"gray","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:2}]}},maxUses:99},{buy:{id:"minecraft:iron_ingot",Count:3},sell:{id:"minecraft:iron_pickaxe",Count:1,tag:{Enchantments:[{id:"minecraft:efficiency",lvl:3}]}},maxUses:99},{buy:{id:"minecraft:coal",Count:16},sell:{id:"minecraft:iron_ingot",Count:4},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:6697728}}},{}],HandItems:[{id:"minecraft:iron_axe",Count:1b},{}]}
+# 
+# # === PLAGUE DOCTOR VOSS — Potions/Dark Magic ===
+# # summon minecraft:villager 985 70 10 VillagerData:{profession:"cleric",level:5,type:"swamp"},CustomName:'{"text":"Plague Doctor Voss","color":"dark_purple","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.voss"],Offers:{Recipes:[{buy:{id:"minecraft:emerald",Count:3},sell:{id:"minecraft:splash_potion",Count:1,tag:{Potion:"minecraft:strong_harming"}},maxUses:99},{buy:{id:"minecraft:emerald",Count:2},sell:{id:"minecraft:potion",Count:1,tag:{Potion:"minecraft:strong_healing"}},maxUses:99},{buy:{id:"minecraft:spider_eye",Count:8},sell:{id:"minecraft:emerald",Count:1},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:4915330}}},{}],HandItems:[{id:"minecraft:brewing_stand",Count:1b},{}]}
+# 
+# # === BEASTMASTER GHARN — Animal Tamer/Scouts ===
+# # summon minecraft:villager 1025 75 0 VillagerData:{profession:"butcher",level:5,type:"taiga"},CustomName:'{"text":"Beastmaster Gharn","color":"dark_green","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.gharn"],Offers:{Recipes:[{buy:{id:"minecraft:bone",Count:8},sell:{id:"minecraft:wolf_spawn_egg",Count:1},maxUses:99},{buy:{id:"minecraft:raw_beef",Count:16},sell:{id:"minecraft:emerald",Count:2},maxUses:99},{buy:{id:"minecraft:emerald",Count:5},sell:{id:"minecraft:saddle",Count:1},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:5635072}}},{}],HandItems:[{id:"minecraft:bone",Count:1b},{}]}
+# 
+# # === SPY LYRA — Intelligence/Scouting ===
+# # summon minecraft:villager 990 70 -20 VillagerData:{profession:"cartographer",level:5,type:"plains"},CustomName:'{"text":"Spy Lyra","color":"dark_aqua","bold":true}',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,Silent:1b,Tags:["korvath.npc","korvath.lyra"],Offers:{Recipes:[{buy:{id:"minecraft:emerald",Count:3},sell:{id:"minecraft:spyglass",Count:1,tag:{display:{Name:'{"text":"Scout\\'s Lens","color":"dark_aqua","italic":false}'}}},maxUses:99},{buy:{id:"minecraft:emerald",Count:5},sell:{id:"minecraft:ender_pearl",Count:4},maxUses:99},{buy:{id:"minecraft:paper",Count:24},sell:{id:"minecraft:emerald",Count:1},maxUses:99}]},ArmorItems:[{},{},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:2263842}}},{}],HandItems:[{id:"minecraft:spyglass",Count:1b},{}]}
+# 
+# tellraw @a[scores={ae_faction=2}] [{"text":"[Korvath] ","color":"dark_red","bold":true},{"text":"War Council assembled.","color":"gray"}]
