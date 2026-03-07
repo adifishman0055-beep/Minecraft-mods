@@ -1,0 +1,18 @@
+{
+  "horn_of_aelori": {
+    "sounds": [
+      {
+        "name": "aelori:horn_of_aelori",
+        "stream": false
+      }
+    ]
+  },
+  "korvath_drums": {
+    "sounds": [
+      {
+        "name": "aelori:korvath_drums",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "advancements.aelori.root.title": "Tides of Aelori",
+  "advancements.aelori.root.description": "Your journey on the shattered shore begins.",
+
+  "advancements.aelori.quest.q01_gather_wood.title": "Timber Supply",
+  "advancements.aelori.quest.q01_gather_wood.description": "Gathered 32 oak logs for the village stockpile.",
+
+  "advancements.aelori.quest.q02_deliver_food.title": "Feed the Village",
+  "advancements.aelori.quest.q02_deliver_food.description": "Delivered 64 bread to the village storehouse.",
+
+  "advancements.aelori.quest.q03_light_torches.title": "Light the Perimeter",
+  "advancements.aelori.quest.q03_light_torches.description": "Placed torches at all 6 perimeter positions.",
+
+  "advancements.aelori.quest.q04_repair_wall.title": "Mend the Walls",
+  "advancements.aelori.quest.q04_repair_wall.description": "Repaired all 4 wall gaps in the village defenses.",
+
+  "advancements.aelori.quest.q05_craft_banner.title": "Raise the Colors",
+  "advancements.aelori.quest.q05_craft_banner.description": "Crafted and raised the Aelori banner at the Town Hall.",
+
+  "advancements.aelori.quest.q06_scout_coast.title": "Beyond the Bluffs",
+  "advancements.aelori.quest.q06_scout_coast.description": "Scouted the eastern coast and witnessed the threat of Korvath.",
+
+  "advancements.aelori.quest.q07_survive_raid.title": "The Night Raid",
+  "advancements.aelori.quest.q07_survive_raid.description": "Survived the Korvathi raid on Aelori village.",
+
+  "advancements.aelori.quest.q08_deliver_iron.title": "Arm the Village",
+  "advancements.aelori.quest.q08_deliver_iron.description": "Delivered iron ingots to Smith Dorek for better equipment.",
+
+  "advancements.aelori.milestone.first_defense.title": "First Defense",
+  "advancements.aelori.milestone.first_defense.description": "Survived your first Korvathi raid.",
+
+  "advancements.aelori.milestone.chapter_1_complete.title": "Chapter 1 Complete",
+  "advancements.aelori.milestone.chapter_1_complete.description": "Completed 'The Shattered Shore'."
+}

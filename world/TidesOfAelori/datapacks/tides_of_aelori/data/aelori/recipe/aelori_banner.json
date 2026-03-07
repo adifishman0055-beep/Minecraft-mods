@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WLW",
+    "WLW",
+    "WLW"
+  ],
+  "key": {
+    "W": {"item": "minecraft:light_blue_wool"},
+    "L": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "id": "minecraft:light_blue_banner",
+    "count": 1
+  }
+}
