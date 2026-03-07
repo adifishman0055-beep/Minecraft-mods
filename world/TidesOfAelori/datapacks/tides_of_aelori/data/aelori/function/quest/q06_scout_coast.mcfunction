@@ -56,3 +56,8 @@ tellraw @s [{"text":"  The raid will begin when night falls...","color":"gray","
 tellraw @s ""
 
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+
+# --- Conquest points ---
+scoreboard players add #global ae_aelori_pts 20
+scoreboard players add @s ae_contribution 20
+function aelori:campaign/award_aelori

@@ -43,3 +43,8 @@ tellraw @s [{"text":"  Bring ","color":"gray"},{"text":"16 Iron Ingots","color":
 tellraw @s ""
 
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
+
+# --- Conquest points ---
+scoreboard players add #global ae_aelori_pts 30
+scoreboard players add @s ae_contribution 30
+function aelori:campaign/award_aelori

@@ -69,3 +69,8 @@ particle totem_of_undying ~ ~1 ~ 2 2 2 0.1 50
 
 # --- Trigger settlement visual upgrade ---
 function aelori:event/settlement_upgrade
+
+# --- Conquest points ---
+scoreboard players add #global ae_aelori_pts 50
+scoreboard players add @s ae_contribution 50
+function aelori:campaign/award_aelori

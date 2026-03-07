@@ -40,3 +40,8 @@ playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
 
 # --- Particle celebration ---
 particle happy_villager ~ ~1 ~ 1 1 1 0 20
+
+# --- Conquest points ---
+scoreboard players add #global ae_aelori_pts 10
+scoreboard players add @s ae_contribution 10
+function aelori:campaign/award_aelori

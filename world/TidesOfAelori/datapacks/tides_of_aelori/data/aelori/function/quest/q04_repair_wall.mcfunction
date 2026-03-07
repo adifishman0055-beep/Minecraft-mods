@@ -48,3 +48,8 @@ particle happy_villager ~ ~1 ~ 2 2 2 0 30
 
 # --- Trigger settlement visual upgrade ---
 function aelori:event/settlement_upgrade
+
+# --- Conquest points ---
+scoreboard players add #global ae_aelori_pts 15
+scoreboard players add @s ae_contribution 15
+function aelori:campaign/award_aelori

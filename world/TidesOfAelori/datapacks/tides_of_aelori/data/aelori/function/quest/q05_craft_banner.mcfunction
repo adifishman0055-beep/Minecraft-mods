@@ -35,3 +35,8 @@ tellraw @s ""
 
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1.2
 particle happy_villager ~ ~1 ~ 1 1 1 0 20
+
+# --- Conquest points ---
+scoreboard players add #global ae_aelori_pts 15
+scoreboard players add @s ae_contribution 15
+function aelori:campaign/award_aelori
