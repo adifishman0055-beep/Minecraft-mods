@@ -20,7 +20,7 @@ execute at @s run summon firework_rocket ~ ~2 ~ {LifeTime:20,FireworksItem:{id:"
 
 give @s emerald 16
 give @s diamond 4
-give @s iron_sword{display:{Name:'{"text":"Raider's Edge","color":"red","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3},{id:"minecraft:knockback",lvl:1}]} 1
+give @s iron_sword[custom_name='{"text":"Item","italic":false}']display:{Name:'{"text":"Raider's Edge","color":"red","italic":false}'},Enchantments:[{id:"minecraft:sharpness",lvl:3},{id:"minecraft:knockback",lvl:1}]} 1
 
 scoreboard players add #global ae_korvath_pts 30
 scoreboard players add @s ae_contribution 30

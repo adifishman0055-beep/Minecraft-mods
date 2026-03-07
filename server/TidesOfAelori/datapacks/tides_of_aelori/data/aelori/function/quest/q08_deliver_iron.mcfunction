@@ -39,7 +39,7 @@ tellraw @s ""
 # --- Massive reward ---
 give @s emerald 32
 give @s diamond 4
-give @s iron_sword{display:{Name:'{"text":"Tide Turner","color":"gold","italic":false}',Lore:['{"text":"The blade that carved Aelori\\'s future","color":"gray","italic":true}','{"text":"Chapter 1 Reward","color":"dark_aqua","italic":true}']},Enchantments:[{id:"sharpness",lvl:3},{id:"unbreaking",lvl:2}]} 1
+give @s iron_sword[custom_name='{"text":"Item","italic":false}']display:{Name:'{"text":"Tide Turner","color":"gold","italic":false}',Lore:['{"text":"The blade that carved Aelori\\'s future","color":"gray","italic":true}','{"text":"Chapter 1 Reward","color":"dark_aqua","italic":true}']},Enchantments:[{id:"sharpness",lvl:3},{id:"unbreaking",lvl:2}]} 1
 give @s golden_apple 6
 
 # --- Grand narrative ---
