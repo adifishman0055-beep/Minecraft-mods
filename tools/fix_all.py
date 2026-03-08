@@ -244,22 +244,52 @@ def fix_gamerules(line):
         return f'# {s}  # Set in server.properties: spawn-protection=0'
     return line
 
+def strip_tag_blocks(s):
+    """Remove all ,tag:{...} occurrences from a string, handling deep nesting."""
+    while True:
+        m = re.search(r',\s*tag\s*:\s*\{', s)
+        if not m:
+            break
+        start = m.start()
+        brace_pos = m.end() - 1  # position of the opening {
+        depth = 1
+        i = brace_pos + 1
+        while i < len(s) and depth > 0:
+            if s[i] == '{':
+                depth += 1
+            elif s[i] == '}':
+                depth -= 1
+            i += 1
+        # Remove from start to i (inclusive of closing })
+        s = s[:start] + s[i:]
+    return s
+
 def fix_villager_trade_items(line):
-    """Strip old tag:{...} from villager trade sell/buy items.
-    This loses custom names/enchants on trade items but keeps the server working."""
-    # Old: sell:{id:"...",Count:1,tag:{display:{Name:'...'},Enchantments:[...]}}
-    # New: sell:{id:"...",count:1}
-    # We'll strip tag:{...} blocks from inside Offers/Recipes
-    # Simple approach: remove tag:{...} segments (they break 1.21.4)
+    """Strip old tag:{...} from villager trade sell/buy items."""
     if 'Offers' in line or 'Recipes' in line:
-        # Remove tag:{display:{...}} inside trade items
-        # Use iterative regex removal for nested braces
-        prev = None
-        while prev != line:
-            prev = line
-            line = re.sub(r',tag\:\{[^{}]*(?:\{[^{}]*\}[^{}]*)?\}', '', line)
-        # Fix Count:Nb → count:N (already done in fix_entity_nbt but redo)
+        line = strip_tag_blocks(line)
+        # Fix Count:N → count:N in trade items
         line = re.sub(r'\bCount\s*:\s*(\d+)\b', r'count:\1', line)
+    return line
+
+def fix_setblock_armor_stand(line):
+    """Convert invalid setblock armor_stand to summon armor_stand."""
+    if 'setblock' in line and 'armor_stand' in line:
+        # setblock X Y Z armor_stand{...} → summon armor_stand X Y Z {...}
+        m = re.match(r'^(.*?)setblock\s+(\S+)\s+(\S+)\s+(\S+)\s+(?:minecraft:)?armor_stand(\{.*\})\s*(?:replace|destroy|keep)?(.*)$', line)
+        if m:
+            pre = m.group(1)
+            x, y, z = m.group(2), m.group(3), m.group(4)
+            nbt = m.group(5)
+            post = m.group(6)
+            # Fix tag:{display:{color:N}} inside nbt
+            nbt = re.sub(
+                r'tag\s*:\s*\{display\s*:\s*\{color\s*:\s*(\d+)\}\}',
+                lambda mm: f'components:{{"minecraft:dyed_color":{{"rgb":{mm.group(1)}}}}}',
+                nbt
+            )
+            nbt = re.sub(r'\bCount\s*:\s*(\d+)b\b', r'count:\1', nbt)
+            return f"{pre}summon armor_stand {x} {y} {z} {nbt}{post}"
     return line
 
 def fix_potion_tags(line):
@@ -273,17 +303,6 @@ def fix_potion_tags(line):
     )
     return line
 
-def fix_setblock_armor_stand(line):
-    """Fix setblock armor_stand with old item tag format."""
-    if 'setblock' in line and 'armor_stand' in line:
-        # Fix tag:{display:{color:N}} → components:{"minecraft:dyed_color":{"rgb":N}}
-        line = re.sub(
-            r'tag\s*:\s*\{display\s*:\s*\{color\s*:\s*(\d+)\}\}',
-            lambda m: f'components:{{"minecraft:dyed_color":{{"rgb":{m.group(1)},"show_in_tooltip":false}}}}',
-            line
-        )
-        line = re.sub(r'\bCount\s*:\s*(\d+)b\b', r'count:\1', line)
-    return line
 
 # ── process each .mcfunction file ─────────────────────────────────────────────
 

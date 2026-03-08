@@ -26,7 +26,7 @@ execute at @s run summon firework_rocket ~3 ~2 ~3 {Life:0,LifeTime:25,FireworksI
 # --- Reward ---
 give @s emerald 25
 give @s golden_apple 4
-give @s iron_chestplate[custom_name="{\"text\":\"Aelori Defender's Plate\",\"color\":\"aqua\",\"italic\":false}",lore=["{\"text\":\"Worn by those who stood against the tide\",\"color\":\"gray\",\"italic\":true}"],enchantments={levels:{"minecraft:protection":2}}]
+give @s iron_chestplate[enchantments={levels:{"minecraft:protection":2}}]
 give @s experience_bottle 8
 
 # --- Narrative ---

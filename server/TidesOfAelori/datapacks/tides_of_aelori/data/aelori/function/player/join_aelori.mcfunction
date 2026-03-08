@@ -51,15 +51,15 @@ tellraw @s [{"text":"═══════════════════�
 tellraw @s ""
 
 # --- Give starter items ---
-give @s book 1
+give @s writable_book 1
 
-give @s compass[custom_name="{\"text\":\"Aelori Compass\",\"color\":\"aqua\",\"italic\":false}",lore=["{\"text\":\"Points to the heart of Aelori\",\"color\":\"gray\",\"italic\":true}"]]
+give @s compass
 give @s bread 16
 give @s stone_axe 1
 give @s stone_pickaxe 1
 
 # --- Give blue team identifier ---
-give @s leather_chestplate[custom_name="{\"text\":\"Aelori Tabard\",\"color\":\"aqua\",\"italic\":false}",dyed_color={rgb:5592575},enchantments={levels:{"minecraft:binding_curse":1}}]
+give @s leather_chestplate[enchantments={levels:{"minecraft:binding_curse":1}},dyed_color={rgb:5592575}]
 
 # --- Grant root advancement & start quest ---
 advancement grant @s only aelori:root

@@ -18,7 +18,7 @@ playsound minecraft:block.note_block.chime master @s ~ ~ ~ 1 1.5
 
 # --- Reward ---
 give @s emerald 10
-give @s spyglass[custom_name="{\"text\":\"Scout's Spyglass\",\"color\":\"aqua\",\"italic\":false}",lore=["{\"text\":\"See what lies beyond the horizon\",\"color\":\"gray\",\"italic\":true}"]]
+give @s spyglass
 
 # --- Narrative ---
 tellraw @s ""

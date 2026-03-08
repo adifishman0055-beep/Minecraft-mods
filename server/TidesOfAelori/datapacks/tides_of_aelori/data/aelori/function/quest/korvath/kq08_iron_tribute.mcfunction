@@ -29,7 +29,7 @@ execute at @s run summon firework_rocket ~-3 ~2 ~-3 {Life:0,LifeTime:30,Firework
 # --- Major rewards ---
 give @s emerald 32
 give @s diamond 8
-give @s iron_chestplate[custom_name="{\"text\":\"Korvath War Plate\",\"color\":\"dark_red\",\"italic\":false,\"bold\":true}",lore=["{\"text\":\"Earned through blood and iron\",\"color\":\"red\",\"italic\":true}"],enchantments={levels:{"minecraft:protection":3,"minecraft:thorns":1}}]
+give @s iron_chestplate[enchantments={levels:{"minecraft:protection":3,"minecraft:thorns":1}}]
 
 scoreboard players add #global ae_korvath_pts 50
 scoreboard players add @s ae_contribution 50

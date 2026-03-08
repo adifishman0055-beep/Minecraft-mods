@@ -12,7 +12,7 @@ tellraw @a [{"text":"  The last team standing claims victory!","color":"red"}]
 tellraw @a ""
 
 # --- Give everyone combat gear ---
-give @a diamond_sword[custom_name="{\"text\":\"Tiebreaker Blade\",\"color\":\"gold\",\"italic\":false}"]
+give @a diamond_sword
 give @a diamond_chestplate 1
 give @a golden_apple 8
 give @a arrow 64

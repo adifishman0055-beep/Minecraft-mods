@@ -39,7 +39,7 @@ advancement grant @s only aelori:quest/q06_scout_coast
 # --- Reward ---
 give @s emerald 10
 give @s iron_ingot 8
-give @s bow[custom_name="{\"text\":\"Scout's Longbow\",\"color\":\"aqua\",\"italic\":false}",lore=["{\"text\":\"Silent and deadly at range\",\"color\":\"gray\",\"italic\":true}"]]
+give @s bow
 give @s arrow 32
 
 # --- Quest complete ---

@@ -52,15 +52,15 @@ tellraw @s [{"text":"═══════════════════�
 tellraw @s ""
 
 # --- Give starter items ---
-give @s book 1
+give @s writable_book 1
 
-give @s compass[custom_name="{\"text\":\"Korvath Warcompass\",\"color\":\"dark_red\",\"italic\":false}",lore=["{\"text\":\"Points to the Korvath warcamp\",\"color\":\"gray\",\"italic\":true}"]]
+give @s compass
 give @s cooked_beef 16
 give @s stone_sword 1
 give @s stone_axe 1
 
 # --- Give red team identifier ---
-give @s leather_chestplate[custom_name="{\"text\":\"Korvath War Tunic\",\"color\":\"dark_red\",\"italic\":false}",dyed_color={rgb:11141120},enchantments={levels:{"minecraft:binding_curse":1}}]
+give @s leather_chestplate[enchantments={levels:{"minecraft:binding_curse":1}},dyed_color={rgb:11141120}]
 
 # --- Grant root advancement & start quest ---
 advancement grant @s only aelori:root

@@ -18,7 +18,7 @@ playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 # --- Reward ---
 give @s emerald 10
 give @s torch 64
-give @s iron_helmet[custom_name="{\"text\":\"Aelori Watch Helm\",\"color\":\"aqua\",\"italic\":false}",lore=["{\"text\":\"Worn by the night watchers\",\"color\":\"gray\",\"italic\":true}"]]
+give @s iron_helmet
 
 # --- Narrative ---
 tellraw @s ""

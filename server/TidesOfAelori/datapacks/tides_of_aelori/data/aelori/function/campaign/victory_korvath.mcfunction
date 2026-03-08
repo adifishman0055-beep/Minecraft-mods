@@ -23,7 +23,7 @@ title @a[scores={ae_faction=1}] subtitle {"text":"Aelori has fallen...","color":
 give @a[scores={ae_faction=2}] diamond 16
 give @a[scores={ae_faction=2}] netherite_ingot 1
 give @a[scores={ae_faction=2}] enchanted_golden_apple 4
-give @a[scores={ae_faction=2}] netherite_sword[custom_name="{\"text\":\"Blade of Korvath\",\"color\":\"dark_red\",\"italic\":false,\"bold\":true}",lore=["{\"text\":\"Forged in conquest\",\"color\":\"red\",\"italic\":true}"],enchantments={levels:{"minecraft:sharpness":5,"minecraft:fire_aspect":2}}]
+give @a[scores={ae_faction=2}] netherite_sword[enchantments={levels:{"minecraft:sharpness":5,"minecraft:fire_aspect":2}}]
 
 # --- Consolation for Aelori ---
 give @a[scores={ae_faction=1}] diamond 4

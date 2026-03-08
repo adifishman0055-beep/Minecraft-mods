@@ -17,7 +17,7 @@ title @s subtitle {"text":"Mission Complete: War Walls","color":"red"}
 playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
 
 give @s emerald 8
-give @s iron_sword[custom_name="{\"text\":\"Korvath Blade\",\"color\":\"dark_red\",\"italic\":false}",enchantments={levels:{"minecraft:sharpness":2}}]
+give @s iron_sword[enchantments={levels:{"minecraft:sharpness":2}}]
 
 scoreboard players add #global ae_korvath_pts 15
 scoreboard players add @s ae_contribution 15

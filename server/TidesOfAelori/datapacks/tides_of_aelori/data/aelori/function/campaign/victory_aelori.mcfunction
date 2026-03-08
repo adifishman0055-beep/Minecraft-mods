@@ -23,7 +23,7 @@ title @a[scores={ae_faction=2}] subtitle {"text":"Korvath has fallen...","color"
 give @a[scores={ae_faction=1}] diamond 16
 give @a[scores={ae_faction=1}] netherite_ingot 1
 give @a[scores={ae_faction=1}] enchanted_golden_apple 4
-give @a[scores={ae_faction=1}] elytra[custom_name="{\"text\":\"Wings of Aelori\",\"color\":\"aqua\",\"italic\":false,\"bold\":true}",lore=["{\"text\":\"Awarded for defending the homeland\",\"color\":\"yellow\",\"italic\":true}"]]
+give @a[scores={ae_faction=1}] elytra
 
 # --- Consolation for Korvath ---
 give @a[scores={ae_faction=2}] diamond 4

@@ -14,7 +14,7 @@ playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.8
 playsound minecraft:entity.ender_dragon.growl master @s ~ ~ ~ 0.2 1.0
 
 give @s emerald 10
-give @s spyglass[custom_name="{\"text\":\"Korvath Spyglass\",\"color\":\"dark_red\",\"italic\":false}",lore=["{\"text\":\"See the enemy before they see you\",\"color\":\"gray\",\"italic\":true}"]]
+give @s spyglass
 
 scoreboard players add #global ae_korvath_pts 15
 scoreboard players add @s ae_contribution 15

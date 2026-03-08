@@ -22,7 +22,7 @@ playsound minecraft:entity.villager.celebrate master @s ~ ~ ~ 0.7 1
 # --- Reward ---
 give @s emerald 12
 give @s golden_apple 2
-give @s iron_sword[custom_name="{\"text\":\"Village Blade\",\"color\":\"white\",\"italic\":false}",lore=["{\"text\":\"Forged for the defenders of Aelori\",\"color\":\"gray\",\"italic\":true}"]]
+give @s iron_sword
 
 # --- Narrative ---
 tellraw @s ""

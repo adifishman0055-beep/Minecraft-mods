@@ -29,7 +29,7 @@ tellraw @s ""
 # --- Reward ---
 give @s emerald 15
 give @s iron_ingot 16
-give @s shield[custom_name="{\"text\":\"Aelori Shield\",\"color\":\"aqua\",\"italic\":false}",lore=["{\"text\":\"Bearing the crest of Aelori\",\"color\":\"gray\",\"italic\":true}"]]
+give @s shield
 
 # --- Narrative ---
 tellraw @s [{"text":"[QUEST COMPLETE] ","color":"green","bold":true},{"text":"Mend the Walls","color":"white"}]

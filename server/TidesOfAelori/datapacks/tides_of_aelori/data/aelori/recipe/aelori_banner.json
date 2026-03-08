@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "WWW",
-    "WSW",
-    "SWS"
+    "XXX",
+    "XSX",
+    "XXX"
   ],
   "key": {
     "W": "minecraft:light_blue_wool",

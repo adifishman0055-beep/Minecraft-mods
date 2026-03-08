@@ -140,8 +140,8 @@ gamerule keepInventory false
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
 gamerule naturalRegeneration true
-# gamerule pvp true  # Set in server.properties: pvp=true
-# gamerule spawnRadius 0  # Set in server.properties: spawn-protection=0
+# gamerule pvp true  # Set in server.properties
+# gamerule spawnRadius 0  # Set in server.properties
 
 # --- Set world spawn to neutral lobby area (between the two islands) ---
 setworldspawn 0 100 0
