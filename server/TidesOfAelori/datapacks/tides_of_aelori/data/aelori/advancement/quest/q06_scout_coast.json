@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:spyglass"
+    },
+    "title": {
+      "text": "Beyond the Bluffs",
+      "color": "yellow"
+    },
+    "description": {
+      "text": "Scouted the eastern coast and witnessed the threat of Korvath."
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "aelori:quest/q05_craft_banner",
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

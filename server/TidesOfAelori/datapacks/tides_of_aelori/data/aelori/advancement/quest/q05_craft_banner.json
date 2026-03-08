@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:light_blue_banner"
+    },
+    "title": {
+      "text": "Raise the Colors",
+      "color": "green"
+    },
+    "description": {
+      "text": "Crafted and raised the Aelori banner at the Town Hall."
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "aelori:quest/q04_repair_wall",
+  "criteria": {
+    "complete": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
