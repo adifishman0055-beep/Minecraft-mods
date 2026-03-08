@@ -20,7 +20,7 @@ print("[1/5] Fresh copy done")
 # Helper: balanced brace removal
 # ═══════════════════════════════════════════════════════════════
 def remove_tag_block(s, start_idx):
-    """Given index of opening { after 'tag:', find matching } and remove ,tag:{...}"""
+    """Given index of opening { after 'tag:', find matching } and remove the block."""
     depth = 1
     i = start_idx + 1
     while i < len(s) and depth > 0:
@@ -28,25 +28,34 @@ def remove_tag_block(s, start_idx):
         if c == '{': depth += 1
         elif c == '}': depth -= 1
         elif c == "'" or c == '"':
-            # skip quoted strings
+            # Skip entire quoted string (handle \\ escapes)
             q = c
             i += 1
-            while i < len(s) and s[i] != q:
-                if s[i] == '\\': i += 1
+            while i < len(s):
+                if s[i] == '\\':
+                    i += 2  # skip escaped char
+                    continue
+                if s[i] == q:
+                    break
                 i += 1
         i += 1
-    return s[:start_idx] + s[i:]  # remove {start_idx..i}
+    return s[:start_idx] + s[i:]
 
 def strip_all_tag_blocks(line):
     """Remove every ,tag:{...} occurrence with balanced brace matching."""
-    while True:
+    max_iter = 50  # safety limit
+    iterations = 0
+    while iterations < max_iter:
+        iterations += 1
         m = re.search(r',\s*tag\s*:\s*\{', line)
         if not m:
             break
-        brace_start = line.index('{', m.start() + 1)
-        # Find start of ,tag: for removal
+        # Find the { position
+        brace_start = m.end() - 1
         comma_pos = m.start()
         line = line[:comma_pos] + remove_tag_block(line[comma_pos:], brace_start - comma_pos)
+    # Also clean any remaining ,tag: stubs (no { follows)
+    line = re.sub(r',\s*tag\s*:\s*(?=[,}\]\s]|$)', '', line)
     return line
 
 # ═══════════════════════════════════════════════════════════════
@@ -285,12 +294,12 @@ print("[3/5] pack.mcmeta fixed")
 # ═══════════════════════════════════════════════════════════════
 RECIPE_DIR = f"{DST}/data/aelori/recipe"
 os.makedirs(RECIPE_DIR, exist_ok=True)
-for name, key_item, result_item in [
-    ("aelori_banner.json", {"W":"minecraft:light_blue_wool","S":"minecraft:stick"}, "minecraft:light_blue_banner"),
-    ("korvath_banner.json", {"R":"minecraft:red_wool","S":"minecraft:stick"}, "minecraft:red_banner"),
+for name, key_item, result_item, pattern in [
+    ("aelori_banner.json", {"W":"minecraft:light_blue_wool","S":"minecraft:stick"}, "minecraft:light_blue_banner", ["WWW","WSW","WWW"]),
+    ("korvath_banner.json", {"R":"minecraft:red_wool","S":"minecraft:stick"}, "minecraft:red_banner", ["RRR","RSR","RRR"]),
 ]:
     with open(f"{RECIPE_DIR}/{name}", 'w') as f:
-        json.dump({"type":"minecraft:crafting_shaped","pattern":["XXX","XSX","XXX"],
+        json.dump({"type":"minecraft:crafting_shaped","pattern":pattern,
                     "key":{k:v for k,v in key_item.items()},
                     "result":{"id":result_item,"count":1}}, f, indent=2)
 print("[4/5] Recipes fixed")

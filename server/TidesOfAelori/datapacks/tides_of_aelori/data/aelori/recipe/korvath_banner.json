@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XXX",
-    "XSX",
-    "XXX"
+    "RRR",
+    "RSR",
+    "RRR"
   ],
   "key": {
     "R": "minecraft:red_wool",

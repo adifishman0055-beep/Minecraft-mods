@@ -1,15 +1,15 @@
 Starting net.fabricmc.loader.impl.game.minecraft.BundlerClassPathCapture
-[15:14:47] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
-[15:14:48] [main/INFO]: Loading 4 mods:
+[15:24:27] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
+[15:24:27] [main/INFO]: Loading 4 mods:
 	- fabricloader 0.16.10
 	   \-- mixinextras 0.4.1
 	- java 21
 	- minecraft 1.21.4
-[15:14:48] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/adifishman/Minecraft-mods/server/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[15:14:51] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[15:14:51] [main/INFO]: Loaded 1372 recipes
-[15:14:51] [main/ERROR]: Failed to load function aelori:village/korvath/spawn_villagers
-java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 10: Expected '}' at position 634: ...Warlord\\'<--[HERE]
+[15:24:27] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/adifishman/Minecraft-mods/server/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[15:24:30] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:24:31] [main/INFO]: Loaded 1372 recipes
+[15:24:31] [main/ERROR]: Failed to load function aelori:village/korvath/spawn_villagers
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 10: Expected '}' at position 461: ...e",count:1<--[HERE]
 	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
 	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
@@ -19,43 +19,9 @@ java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Wh
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
-Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 10: Expected '}' at position 634: ...Warlord\\'<--[HERE]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 10: Expected '}' at position 461: ...e",count:1<--[HERE]
 	at knot/net.minecraft.class_2158.method_9195(class_2158.java:80) ~[server-intermediary.jar:?]
 	at knot/net.minecraft.class_5349.method_29451(class_5349.java:87) ~[server-intermediary.jar:?]
 	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
 	... 6 more
-[15:14:51] [main/ERROR]: Failed to load function aelori:event/korvath/settlement_upgrade
-java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 17: Unknown block type 'minecraft:armor_stand' at position 81: ...1003 70 0 <--[HERE]
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
-Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 17: Unknown block type 'minecraft:armor_stand' at position 81: ...1003 70 0 <--[HERE]
-	at knot/net.minecraft.class_2158.method_9195(class_2158.java:80) ~[server-intermediary.jar:?]
-	at knot/net.minecraft.class_5349.method_29451(class_5349.java:87) ~[server-intermediary.jar:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	... 6 more
-[15:14:51] [main/ERROR]: Failed to load function aelori:quest/korvath/kq07_repel_attack
-java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 23: Malformed 'minecraft:custom_name' component: 'com.google.gson.stream.MalformedJsonException: Unterminated string at line 1 column 16 path $.text
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json' at position 31: ...stom_name=<--[HERE]
-	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?]
-	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?]
-Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 23: Malformed 'minecraft:custom_name' component: 'com.google.gson.stream.MalformedJsonException: Unterminated string at line 1 column 16 path $.text
-See https://github.com/google/gson/blob/main/Troubleshooting.md#malformed-json' at position 31: ...stom_name=<--[HERE]
-	at knot/net.minecraft.class_2158.method_9195(class_2158.java:80) ~[server-intermediary.jar:?]
-	at knot/net.minecraft.class_5349.method_29451(class_5349.java:87) ~[server-intermediary.jar:?]
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	... 6 more
-[15:14:51] [main/INFO]: Loaded 1492 advancements
+[15:24:31] [main/INFO]: Loaded 1492 advancements
