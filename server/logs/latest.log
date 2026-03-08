@@ -1,10 +1,82 @@
-[15:31:04] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
-[15:31:04] [main/INFO]: Loading 4 mods:
+[15:36:57] [main/INFO]: Loading Minecraft 1.21.4 with Fabric Loader 0.16.10
+[15:36:57] [main/INFO]: Loading 4 mods:
 	- fabricloader 0.16.10
 	   \-- mixinextras 0.4.1
 	- java 21
 	- minecraft 1.21.4
-[15:31:04] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/adifishman/Minecraft-mods/server/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[15:31:07] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[15:31:08] [main/INFO]: Loaded 1372 recipes
-[15:31:08] [main/INFO]: Loaded 1492 advancements
+[15:36:57] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/Users/adifishman/Minecraft-mods/server/libraries/net/fabricmc/sponge-mixin/0.15.4+mixin.0.8.7/sponge-mixin-0.15.4+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[15:37:00] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[15:37:01] [main/INFO]: Loaded 1372 recipes
+[15:37:01] [main/INFO]: Loaded 1492 advancements
+[15:37:01] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[15:37:01] [Server thread/INFO]: Loading properties
+[15:37:01] [Server thread/INFO]: Default game type: SURVIVAL
+[15:37:01] [Server thread/INFO]: Generating keypair
+[15:37:01] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:37:01] [Server thread/INFO]: Using default channel type
+[15:37:01] [Server thread/INFO]: Preparing level "TidesOfAelori"
+[15:37:01] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:37:02] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:37:02] [Worker-Main-3/INFO]: Preparing spawn area: 0%
+[15:37:02] [Server thread/INFO]: Time elapsed: 763 ms
+[15:37:02] [Server thread/INFO]: Done (0.878s)! For help, type "help"
+[15:37:03] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:04] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:05] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:06] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:07] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:08] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:09] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:10] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:11] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:12] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:13] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:14] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:15] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:16] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:17] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:18] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:19] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:20] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:21] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:22] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:23] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:24] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:25] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:26] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:27] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:28] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:29] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:30] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:31] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:32] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:33] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:34] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:35] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:36] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:37] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:38] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:39] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:40] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:41] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:42] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:43] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:44] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:45] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:46] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:47] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:48] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:49] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:50] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:51] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:52] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:53] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:54] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:55] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:56] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:57] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:58] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:37:59] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:38:00] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:38:01] [Server thread/WARN]: Failed to load offers: Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:raw_beef
+[15:38:02] [Server thread/INFO]: Server empty for 60 seconds, pausing
